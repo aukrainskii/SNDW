@@ -1,0 +1,5429 @@
+/********** Shortcode: Animation Box *************************************************************/
+.dnd-animo,
+.dnd-animo-children > *{
+	visibility: hidden;
+}
+
+.dnd-animo.zoom{
+	-webkit-transition: 500ms ease-in-out;
+	-moz-transition: 500ms ease-in-out;
+	-o-transition: 500ms ease-in-out;
+	transition: 500ms ease-in-out;
+}
+
+.dnd-animo:hover.zoom{
+	cursor: pointer;
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+/********** Shortcode: Columns & sections *************************************************************/
+.dnd_container{
+	width: 100%;
+}
+
+.dnd_container:before,
+.dnd_container:after{
+	display: table;
+	line-height: 0;
+	content: "";
+}
+
+.dnd_container:after{
+	clear: both;
+}
+
+.dnd_section_dd.section_with_header .dnd_container{
+	margin-bottom: 34px;
+	margin-top: 0px;
+}
+
+.section_body_fullwidth .dnd_section_content .dnd_container{
+	width: 100%;
+}
+
+.dnd_section_dd{
+	position: relative;
+	overflow:hidden;
+	padding: 70px 0;
+}
+
+.dnd_section_dd > *{
+	z-index: 1;
+	position: relative;
+}
+
+.dnd_video_background{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 0;
+	visibility: hidden;
+}
+
+.dnd_video_background .mejs-container{
+	background:none !important;
+}
+
+.dnd_video_background .mejs-overlay-loading{
+	display: none !important;
+}
+
+.dnd-parallax{
+	background-position: 50% top;
+	background-attachment:fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.dnd_container [class*="column_dd_span"]{
+	display: block;
+	float: left;
+	min-height: 20px;
+	margin-left: 2.564102564102564%;
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box;
+}
+
+.section_no_column_margin .dnd_container [class*="column_dd_span"],
+.dnd_container [class*="column_dd_span"]:first-child{
+	margin-left: 0;
+}
+
+.dnd_column_dd_span12  {width: 100%;}
+.dnd_column_dd_span11  {width: 91.45299145299145%;}
+.dnd_column_dd_span10  {width: 82.90598290598291%;}
+.dnd_column_dd_span9   {width: 74.35897435897436%;}
+.dnd_column_dd_span8   {width: 65.81196581196581%;}
+.dnd_column_dd_span7   {width: 57.26495726495726%;}
+.dnd_column_dd_span6   {width: 48.71794871794872%;}
+.dnd_column_dd_span5   {width: 40.17094017094017%;}
+.dnd_column_dd_span4   {width: 31.62393162393162%;}
+.dnd_column_dd_span3   {width: 23.07692307692308%;}
+.dnd_column_dd_span2   {width: 14.52991452991453%;}
+.dnd_column_dd_span1   {width: 5.982905982905983%;}
+
+.section_no_column_margin .dnd_column_dd_span12  {width: 100%;}
+.section_no_column_margin .dnd_column_dd_span11  {width: 91.6666666666665%;}
+.section_no_column_margin .dnd_column_dd_span10  {width: 83.3333333333334%;}
+.section_no_column_margin .dnd_column_dd_span9   {width: 74.9999999999999%;}
+.section_no_column_margin .dnd_column_dd_span8   {width: 66.6666666666665%;}
+.section_no_column_margin .dnd_column_dd_span7   {width: 58.3333333333332%;}
+.section_no_column_margin .dnd_column_dd_span6   {width: 49.9999999999999%;}
+.section_no_column_margin .dnd_column_dd_span5   {width: 41.6666666666665%;}
+.section_no_column_margin .dnd_column_dd_span4   {width: 33.3333333333332%;}
+.section_no_column_margin .dnd_column_dd_span3   {width: 24.9999999999999%;}
+.section_no_column_margin .dnd_column_dd_span2   {width: 16.6666666666665%;}
+.section_no_column_margin .dnd_column_dd_span1   {width:  8.3333333333332%;}
+
+.section_equalize_5 .dnd_column_dd_span3,
+.section_equalize_5 .dnd_column_dd_span2{
+	width:  17.95084476%;
+}
+
+.section_equalize_5 .dnd_container [class*="column_dd_span"]{
+	margin-left: 2.564102564102564%;
+}
+
+.section_no_column_margin.section_equalize_5 .dnd_container [class*="column_dd_span"],
+.section_equalize_5 .dnd_container [class*="column_dd_span"]:first-child{
+	margin-left: 0;
+}
+
+.section_no_column_margin.section_equalize_5 .dnd_column_dd_span3,
+.section_no_column_margin.section_equalize_5 .dnd_column_dd_span2{
+	width:  20%;
+}
+
+.dnd_section_dd header,
+.dnd_section_dd footer{
+	text-align: center;
+}
+
+.dnd_section_dd header h3{
+	font-family: Lato;
+	font-weight: 300;
+	display: inline-block;
+	color: #222222;
+	font-size: 40px;
+	line-height: 40px;
+	margin-bottom: 26px;
+	position: relative;
+	border-left: solid 1px #E4664D;
+	border-right: solid 1px #E4664D;
+	padding: 0 20px 0 20px;
+}
+
+.column_title_left{
+	font-family: Lato;
+	font-weight: 400;
+	display: inline-block;
+	color: #222222;
+	line-height: 40px;
+	margin-bottom: 26px;
+	position: relative;
+	padding: 0 20px 0 0px;
+}
+
+
+.dnd_section_dd header h3:before{
+	content:"";
+	border-bottom: 1px solid #E4664D;
+	width: 30px;
+	height: 0;
+	position: absolute;
+	bottom: 50%;
+    left:-30px;
+}
+
+.dnd_section_dd header h3:after{
+    content:"";
+	border-bottom: 1px solid #E4664D;
+	width: 30px;
+	height: 0;
+	position: absolute;
+	bottom: 50%;
+    right:-30px;
+}
+
+.dnd_section_dd.smaller header h3{
+	font-size: 24px;
+	line-height: 29px;
+	border: 0;
+	font-weight: 400;
+}
+
+.dnd_section_dd.smaller header h3:before{
+	display: none;
+}
+
+.dnd_section_dd.smaller header h3:after{
+	display: none;
+}
+
+.dnd_section_dd.smaller_headline header h3{
+	font-size: 30px;
+	line-height: 20px;
+	color: #fff;
+	border-left: solid 1px #fff;
+	border-right: solid 1px #fff;
+	padding: 0 15px 0 15px;
+}
+
+.dnd_section_dd.smaller_headline header h3:before{
+	content:"";
+	border-bottom: 1px solid #fff;
+	width: 20px;
+	height: 0;
+	position: absolute;
+	bottom: 50%;
+    left:-20px;
+}
+
+.dnd_section_dd.smaller_headline header h3:after{
+    content:"";
+	border-bottom: 1px solid #fff;
+	width: 20px;
+	height: 0;
+	position: absolute;
+	bottom: 50%;
+    right:-20px;
+}
+
+.dnd_section_dd.section_title_left header h3,
+.column_title_left{
+	display: block;
+	text-align: left;
+	padding-bottom: 10px;
+}
+
+.column_title_left{
+	margin-bottom: 20px;
+}
+
+.dnd_section_dd header p{
+	font-family: Lato;
+	margin-bottom: 30px;
+	padding: 0 100px;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 22.4px;
+	color: #666;
+}
+
+.white_text.dnd_section_dd header p{
+	color: #fff;
+}
+
+.white_text.dnd_section_dd header h3{
+	color: #fff;
+}
+
+
+
+/********** Shortcode: Abbreviation *************************************************************/
+.dnd-abbr{
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+
+/********** jQuery UI helpers *************************************************************/
+.ui-helper-reset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+}
+
+.ui-helper-clearfix:before,
+.ui-helper-clearfix:after { 
+	content: "";
+	display: table;
+}
+
+.ui-helper-clearfix:after { 
+	clear: both;
+}
+
+.ui-helper-zfix {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	opacity: 0;
+	filter:Alpha(Opacity=0);
+}
+
+
+/********** Shortcode: Tabs *************************************************************/
+.dnd-tabs {
+	position: relative; 
+	margin-bottom: 30px;
+	clear: both;
+} 
+
+.dnd-tabs .ui-tabs-panel p{
+	margin-bottom: 7px;
+}
+
+.dnd-tabs .ui-tabs-nav{
+	margin: 0;
+}
+
+.dnd-tabs .ui-tabs-nav li a{
+	text-align: center;
+	clear:both;
+	box-sizing: border-box;
+	display: block;
+	padding: 12px 18px;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	outline: none;
+	color: #848994;
+	font-size: 13px;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+.dnd-tabs.dnd-tabs-boxed.dnd-tabs-position-top .ui-tabs-nav li {
+	list-style: none;
+	float: left;
+	display: block;
+	white-space: nowrap;
+	margin: 0;
+	padding: 0;
+	border-top: 1px solid #eeeeee;
+	border-left: 1px solid #eeeeee;
+	border-right: 1px solid #eeeeee;
+	background: #fff;
+	font-size: 13px;
+	line-height: 18px;
+	position: relative;
+	font-family: Lato;
+	font-weight: 700;
+	margin-right: 2px;
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+}
+
+.dnd-tabs.dnd-tabs-unboxed.dnd-tabs-position-top .ui-tabs-nav li {
+	list-style: none;
+	float: left;
+	display: block;
+	white-space: nowrap;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #eeeeee;
+	border-right: 0px;
+	background: #fff;
+	font-size: 13px;
+	line-height: 18px;
+	position: relative;
+	font-family: Lato;
+	font-weight: 700;
+}
+
+.dnd-tabs.dnd-tabs-unboxed.dnd-tabs-position-top .ui-tabs-nav li:first-child {
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+
+.dnd-tabs.dnd-tabs-unboxed.dnd-tabs-position-top .ui-tabs-nav li:last-child {
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-right: 1px solid #eeeeee;
+}
+
+.dnd-tabs.dnd-tabs-position-top.dnd-tabs-boxed .ui-tabs-nav li:hover a{
+	color: #fff!important;
+	background: #e4664d;
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+}
+
+.dnd-tabs.dnd-tabs-position-top.dnd-tabs-unboxed .ui-tabs-nav li:first-child:hover a{
+	color: #fff!important;
+	background: #e4664d;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+
+.dnd-tabs.dnd-tabs-position-top.dnd-tabs-unboxed .ui-tabs-nav li:last-child:hover a{
+	color: #fff!important;
+	background: #e4664d;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+.dnd-tabs.dnd-tabs-position-top.dnd-tabs-unboxed .ui-tabs-nav li:hover a{
+	color: #fff!important;
+	background: #e4664d;
+}
+
+.dnd-tabs .ui-tabs-nav li.ui-tabs-active {
+	position: relative;
+}
+
+.dnd-tabs .ui-tabs-nav li.ui-tabs-active:after{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 1px;
+	background: #fff;
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+}
+
+.dnd-tabs.dnd-tabs-horizontal.dnd-tabs-position-top.dnd-tabs-boxed .dnd-tabs-wrapper{
+	background: #fff;
+}
+
+.dnd-tabs.dnd-tabs-unboxed .ui-tabs-nav li.ui-tabs-active:after{
+	content: "";
+	display: none;
+}
+
+.dnd-tabs .ui-tabs-nav li.ui-tabs-active a{
+	color: #e4664d;
+	cursor: default;
+}
+
+.dnd-tabs .ui-tabs-nav li:last-child{
+	border-right: 1px solid #eeeeee;
+}
+
+.dnd-tabs.dnd-tabs-boxed .dnd-tabs-wrapper{
+	border: 1px solid #eeeeee;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.dnd-tabs.dnd-tabs-unboxed .dnd-tabs-wrapper{
+	border: none;
+}
+
+.dnd-tabs .ui-tabs-panel {
+	display: block;
+	border-width: 0;
+	padding: 25px 30px;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+
+.dnd-tabs.dnd-tabs-unboxed .ui-tabs-panel {
+	display: block;
+	border-width: 0;
+	padding: 25px 10px 25px 0px;
+}
+
+.ui-tabs-hide {
+	display: none;
+}
+
+
+/* bottom positioned tabs */
+
+.dnd-tabs.dnd-tabs-position-bottom{
+	margin-bottom: 75px;
+}
+
+.dnd-tabs.dnd-tabs-position-bottom .ui-tabs-panel {
+	display: block;
+	border-width: 0;
+	padding: 25px 30px;
+	border-top-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.dnd-tabs.dnd-tabs-boxed.dnd-tabs-position-bottom .ui-tabs-nav li {
+	list-style: none;
+	float: left;
+	display: block;
+	white-space: nowrap;
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px solid #eeeeee;
+	border-left: 1px solid #eeeeee;
+	border-right: 1px solid #eeeeee;
+	background: #fff;
+	font-size: 13px;
+	line-height: 18px;
+	position: relative;
+	font-family: Lato;
+	font-weight: 700;
+	margin-right: 2px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+.dnd-tabs.dnd-tabs-horizontal.dnd-tabs-position-bottom.dnd-tabs-boxed .dnd-tabs-wrapper{
+	background: #fff;
+}
+
+.dnd-tabs.dnd-tabs-unboxed.dnd-tabs-position-bottom .ui-tabs-nav li {
+	list-style: none;
+	float: left;
+	display: block;
+	white-space: nowrap;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #eeeeee;
+	border-right: 0px;
+	background: #fff;
+	font-size: 13px;
+	line-height: 18px;
+	position: relative;
+	font-family: Lato;
+	font-weight: 700;
+}
+
+.dnd-tabs.dnd-tabs-unboxed.dnd-tabs-position-bottom .ui-tabs-nav li:first-child {
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+
+.dnd-tabs.dnd-tabs-unboxed.dnd-tabs-position-bottom .ui-tabs-nav li:last-child {
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-right: 1px solid #eeeeee;
+}
+
+.dnd-tabs.dnd-tabs-position-bottom.dnd-tabs-boxed .ui-tabs-nav li:hover a{
+	color: #fff!important;
+	background: #e4664d;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+.dnd-tabs.dnd-tabs-position-bottom.dnd-tabs-unboxed .ui-tabs-nav li:first-child:hover a{
+	color: #fff!important;
+	background: #e4664d;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+.dnd-tabs.dnd-tabs-position-bottom.dnd-tabs-unboxed .ui-tabs-nav li:last-child:hover a{
+	color: #fff!important;
+	background: #e4664d;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+.dnd-tabs.dnd-tabs-position-bottom.dnd-tabs-unboxed .ui-tabs-nav li:hover a{
+	color: #fff!important;
+	background: #e4664d;
+}
+
+.dnd-tabs.dnd-tabs-position-bottom .ui-tabs-nav li.ui-tabs-active {
+	position: relative;
+}
+
+.dnd-tabs.dnd-tabs-position-bottom .ui-tabs-nav li.ui-tabs-active:after{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 1px;
+	background: #fff;
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+}
+
+.dnd-tabs.dnd-tabs-position-bottom.dnd-tabs-unboxed .ui-tabs-nav li.ui-tabs-active:after{
+	content: "";
+	display: none;
+}
+
+.dnd-tabs.dnd-tabs-position-bottom .ui-tabs-nav li.ui-tabs-active a{
+	color: #e4664d;
+	cursor: default;
+}
+
+.dnd-tabs.dnd-tabs-position-bottom .ui-tabs-nav li:last-child{
+	border-right: 1px solid #eeeeee;
+}
+
+.dnd-tabs.dnd-tabs-position-bottom.dnd-tabs-boxed .dnd-tabs-wrapper{
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 3px;
+}
+
+.dnd-tabs.dnd-tabs-position-bottom.dnd-tabs-unboxed .dnd-tabs-wrapper{
+	border: none;
+}
+
+.dnd-tabs.dnd-tabs-position-bottom.dnd-tabs-unboxed .ui-tabs-panel {
+	display: block;
+	border-width: 0;
+	padding: 25px 10px 25px 0px;
+}
+
+.dnd-tabs-position-bottom .ui-tabs-nav {
+	border-bottom: none;
+	position: absolute;
+	bottom:-43px;
+}
+
+.dnd-tabs-position-bottom .ui-tabs-nav li.ui-tabs-active:after{
+	top: -1px;
+	bottom: auto;
+}
+
+
+/* left or right positioned tabs */
+
+.dnd-tabs-vertical .ui-tabs-nav li a{
+	padding: 13px 13px 13px 17px;
+}
+
+/* left positioned tabs */
+.dnd-tabs-position-left.dnd-tabs-boxed .dnd-tabs-wrapper{
+	margin-left: 170px;
+}
+
+.dnd-tabs.dnd-tabs-position-left .ui-tabs-panel {
+	display: block;
+	border-width: 0;
+	padding: 25px 30px;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+
+.dnd-tabs-position-left.dnd-tabs-boxed.dnd-tabs-boxed .ui-tabs-nav {
+	width: 170px;
+	float: left;
+	margin-bottom: 30px;
+}
+
+.dnd-tabs-position-left.dnd-tabs-boxed .ui-tabs-nav li{
+	float: left;
+	width: 170px;
+	line-height: 14px;
+	border-right: none;
+	list-style-type: none;
+	border-top: 1px solid #eeeeee;
+	border-left: 1px solid #eeeeee;
+	border-bottom: 1px solid #eeeeee;
+	margin-bottom: 2px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+.dnd-tabs-position-left.dnd-tabs-boxed .ui-tabs-nav li a{
+	text-align: left;
+}
+
+.dnd-tabs-position-left.dnd-tabs-boxed .ui-tabs-nav li.ui-tabs-active{
+	background: #fff;
+}
+
+.dnd-tabs-position-left.dnd-tabs-boxed .ui-tabs-nav li.ui-tabs-active:after{
+	content: "";
+	display: block;
+	width: 1px;
+	height: 100%;
+	background: #fff;
+	position: absolute;
+	bottom: auto;
+	left: auto;
+	right: -1px;
+	top: 0;
+}
+
+.dnd-tabs-position-left.dnd-tabs-boxed .ui-tabs-nav li:hover a{
+	color: #fff!important;
+	background: #e4664d;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+.dnd-tabs.dnd-tabs-vertical.dnd-tabs-position-left.dnd-tabs-boxed .dnd-tabs-wrapper{
+	background: #fff;
+}
+
+/*unboxed*/
+
+.dnd-tabs-position-left.dnd-tabs-unboxed .dnd-tabs-wrapper{
+	margin-left: 160px;
+	padding: 0 30px 30px 10px;
+}
+
+.dnd-tabs.dnd-tabs-position-left.dnd-tabs-unboxed .ui-tabs-panel{
+	padding: 0;
+}
+
+.dnd-tabs-position-left.dnd-tabs-unboxed .ui-tabs-nav {
+	width: 140px;
+	float: left;
+	margin-bottom: 30px;
+}
+
+.dnd-tabs-position-left.dnd-tabs-unboxed .ui-tabs-nav li{
+	float: none;
+	width: 140px;
+	line-height: 14px;
+	border-right: none;
+	list-style-type: none;
+	border-top: 1px solid #eeeeee;
+	border-left: 1px solid #eeeeee;
+	border-right: 1px solid #eeeeee;
+	border-bottom: 1px solid #eeeeee;
+}
+
+.dnd-tabs-position-left.dnd-tabs-unboxed .ui-tabs-nav li:first-child{
+	border-bottom: none;
+}
+
+.dnd-tabs-position-left.dnd-tabs-unboxed .ui-tabs-nav li:last-child{
+	border-top: none;	
+}
+
+.dnd-tabs-position-left.dnd-tabs-unboxed .ui-tabs-nav li.ui-tabs-active{
+	background: #fff;
+}
+
+.dnd-tabs-position-left.dnd-tabs-unboxed .ui-tabs-nav li.ui-tabs-active:after{
+}
+
+.dnd-tabs-position-left.dnd-tabs-unboxed .ui-tabs-nav li:hover a{
+	color: #fff!important;
+	background: #e4664d;
+}
+
+.dnd-tabs-position-left.dnd-tabs-unboxed .ui-tabs-nav li:first-child:hover a{
+	color: #fff!important;
+	background: #e4664d;
+}
+
+.dnd-tabs-position-left.dnd-tabs-unboxed .ui-tabs-nav li:last-child:hover a{
+	color: #fff!important;
+	background: #e4664d;
+}
+
+/* right positioned tabs */
+.dnd-tabs-position-right.dnd-tabs-boxed .dnd-tabs-wrapper{
+	margin-right: 170px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 0px;
+}
+
+.dnd-tabs.dnd-tabs-position-right .ui-tabs-panel {
+	display: block;
+	border-width: 0;
+	padding: 25px 30px;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-top-left-radius: 3px;
+}
+
+
+.dnd-tabs-position-right.dnd-tabs-boxed.dnd-tabs-boxed .ui-tabs-nav {
+	width: 170px;
+	float: right;
+	margin-bottom: 30px;
+}
+
+.dnd-tabs-position-right.dnd-tabs-boxed .ui-tabs-nav li{
+	float: right;
+	width: 170px;
+	line-height: 14px;
+	border-right: none;
+	list-style-type: none;
+	border-top: 1px solid #eeeeee;
+	border-right: 1px solid #eeeeee;
+	border-bottom: 1px solid #eeeeee;
+	margin-bottom: 2px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+.dnd-tabs-position-right.dnd-tabs-boxed .ui-tabs-nav li a{
+	text-align: right;
+}
+
+.dnd-tabs-position-right.dnd-tabs-boxed .ui-tabs-nav li.ui-tabs-active{
+	background: #fff;
+}
+
+.dnd-tabs-position-right.dnd-tabs-boxed .ui-tabs-nav li.ui-tabs-active:after{
+	content: "";
+	display: block;
+	width: 1px;
+	height: 100%;
+	background: #fff;
+	position: absolute;
+	bottom: auto;
+	left: -1px;
+	right: auto;
+	top: 0;
+}
+
+.dnd-tabs-position-right.dnd-tabs-boxed .ui-tabs-nav li:hover a{
+	color: #fff!important;
+	background: #e4664d;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+.dnd-tabs.dnd-tabs-vertical.dnd-tabs-position-right.dnd-tabs-boxed .dnd-tabs-wrapper{
+	background: #fff;
+}
+
+/*unboxed*/
+
+.dnd-tabs-position-right.dnd-tabs-unboxed .dnd-tabs-wrapper{
+	margin-right: 160px;
+	padding: 0px 10px 30px 0px;
+}
+
+.dnd-tabs.dnd-tabs-position-right.dnd-tabs-unboxed .ui-tabs-panel{
+	padding: 0;
+}
+
+.dnd-tabs-position-right.dnd-tabs-unboxed .ui-tabs-nav {
+	width: 140px;
+	float: right;
+	margin-bottom: 30px;
+}
+
+.dnd-tabs-position-right.dnd-tabs-unboxed .ui-tabs-nav li{
+	float: none;
+	width: 140px;
+	line-height: 14px;
+	border-right: none;
+	list-style-type: none;
+	border-top: 1px solid #eeeeee;
+	border-left: 1px solid #eeeeee;
+	border-right: 1px solid #eeeeee;
+	border-bottom: 1px solid #eeeeee;
+}
+
+.dnd-tabs-position-right.dnd-tabs-unboxed .ui-tabs-nav li:first-child{
+	border-bottom: none;
+}
+
+.dnd-tabs-position-right.dnd-tabs-unboxed .ui-tabs-nav li:last-child{
+	border-top: none;	
+}
+
+.dnd-tabs-position-right.dnd-tabs-unboxed .ui-tabs-nav li.ui-tabs-active{
+	background: #fff;
+}
+
+.dnd-tabs-position-right.dnd-tabs-unboxed .ui-tabs-nav li.ui-tabs-active:after{
+}
+
+.dnd-tabs-position-right.dnd-tabs-unboxed .ui-tabs-nav li:hover a{
+	color: #fff!important;
+	background: #e4664d;
+}
+
+.dnd-tabs-position-right.dnd-tabs-unboxed .ui-tabs-nav li:first-child:hover a{
+	color: #fff!important;
+	background: #e4664d;
+}
+
+.dnd-tabs-position-right.dnd-tabs-unboxed .ui-tabs-nav li:last-child:hover a{
+	color: #fff!important;
+	background: #e4664d;
+}
+
+
+/* Bellow width break point */
+.dnd-tabs.dnd-tabs-fullwidthtabs .ui-tabs-nav li {
+	margin-right: 0px;
+	width: 100%;
+	margin-left: 0;
+	float: none;
+	text-align: left;
+	padding: 5px 15px;
+	border: 1px solid #eeeeee;
+	border-bottom:none;
+}
+
+.dnd-tabs.dnd-tabs-fullwidthtabs .ui-tabs-nav li.ui-tabs-active{
+	background: #f9f9f9;
+}
+
+.dnd-tabs.dnd-tabs-fullwidthtabs .ui-tabs-nav li.ui-tabs-active:after{
+	display: none;
+}
+
+.dnd-tabs-position-bottom.dnd-tabs-fullwidthtabs .ui-tabs-nav {
+	position: relative;
+}
+
+.dnd-tabs-position-bottom.dnd-tabs-fullwidthtabs .ui-tabs-nav li.ui-tabs-active:after{
+	display: none;
+}
+
+.dnd-tabs-position-bottom.dnd-tabs-fullwidthtabs .ui-tabs-panel {
+	padding: 0;
+}
+
+.dnd-tabs-position-left.dnd-tabs-fullwidthtabs .ui-tabs-nav,
+.dnd-tabs-position-right.dnd-tabs-fullwidthtabs .ui-tabs-nav {
+	margin: 0;
+	border-bottom:none;
+	border-right: 1px solid #eeeeee;
+	width: 100%;
+	position: relative;
+	padding-bottom: 20px;
+}
+
+.dnd-tabs-position-left.dnd-tabs-fullwidthtabs .ui-tabs-nav li,
+.dnd-tabs-position-right.dnd-tabs-fullwidthtabs .ui-tabs-nav li{
+	float: none;
+	text-align: left;
+	line-height: 37px;
+	padding: 5px 15px;
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.dnd-tabs-position-left.dnd-tabs-fullwidthtabs .ui-tabs-nav li.ui-tabs-active,
+.dnd-tabs-position-right.dnd-tabs-fullwidthtabs .ui-tabs-nav li.ui-tabs-active{
+	background: #f9f9f9;
+}
+
+.dnd-tabs-position-left.dnd-tabs-fullwidthtabs .ui-tabs-nav li.ui-tabs-active:after,
+.dnd-tabs-position-right.dnd-tabs-fullwidthtabs .ui-tabs-nav li.ui-tabs-active:after{
+	display: none;
+}
+
+.dnd-tabs-position-left.dnd-tabs-fullwidthtabs .ui-tabs-panel,
+.dnd-tabs-position-right.dnd-tabs-fullwidthtabs .ui-tabs-panel{
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-top:0;
+}
+
+/* Timeline */
+
+.dnd-tabs .dnd-tabs-timeline{
+	list-style-type: none;
+}
+
+.dnd-tabs.dnd-tabs-timeline ul li{
+	list-style: none;
+	float: left;
+	display: table-cell;
+	white-space: nowrap;
+	background: transparent;
+	margin: 0;
+	padding: 0;
+	border: 0px ;
+	font-size: 14px;
+	line-height: 18px;
+	position: relative;
+	font-family: Lato;
+	font-weight: 700;
+	color: #3b4550;
+	position: relative;
+}
+
+.dnd-tabs.dnd-tabs-timeline ul li:hover a{
+	color: #e4664d;
+}
+
+.dnd-tabs.dnd-tabs-timeline .ui-tabs-nav li.ui-tabs-active:before{
+	content: "";
+	display: block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 1px solid #eeeeee;
+	background: #fff;
+	position: absolute;
+	bottom: -12px;
+	left: 50%;
+	margin-left: -10px;
+}
+
+.dnd-tabs.dnd-tabs-timeline .ui-tabs-nav li.ui-tabs-active:after{
+	content:" ";
+	width: 15px;
+	height: 15px;
+	border-top: 1px solid #eeeeee;
+	border-right: 1px solid #eeeeee;
+	transform:rotate(-45deg);
+	-ms-transform:rotate(-45deg);
+	-webkit-transform:rotate(-45deg);
+	background: #fff;
+	position: absolute;
+	bottom: -57px;
+	left: 50%;
+	margin-left: -7px;
+	z-index: 1;
+}
+
+.dnd-tabs.dnd-tabs-timeline ul li:last-child{
+	border-right: 0;
+}
+
+.dnd-tabs.dnd-tabs-timeline ul.ui-tabs-nav:after{
+	content: " ";
+	width: 100%;
+	height: 4px;
+	background: #848994;
+}
+
+
+.dnd-tabs.dnd-tabs-timeline .dnd-tabs-wrapper{
+	margin-top: 45px;
+	border: 1px solid #eeeeee;
+	border-radius: 5px;
+	position: relative;
+	text-align: center;
+}
+
+.dnd-tabs.dnd-tabs-timeline .dnd-tabs-wrapper p{
+	text-align: left;
+	margin-top: 20px;
+}
+
+.dnd-tabs.dnd-tabs-timeline .timeline_title{
+	font-size: 14px;
+	color: #3b4550;
+	font-family: Lato;
+	font-weight: 700;
+}
+
+.dnd-tabs.dnd-tabs-timeline .ui-tabs-anchor{
+	margin-bottom: 8px;
+}
+
+.dnd-tabs.dnd-tabs-timeline .ui-tabs-panel{
+	border-radius: 5px;
+}
+
+.tab_par_1 {width: 100%;}
+.tab_par_2 {width: 50%;}
+.tab_par_3 {width: 33.33%;}
+.tab_par_4 {width: 25%;}
+.tab_par_5 {width: 20%;}
+.tab_par_6 {width: 16.66%;}
+.tab_par_7 {width: 14.28%;}
+.tab_par_8 {width: 12.5%;}
+.tab_par_9 {width: 11.11%;}
+.tab_par_10 {width: 10%;}
+.tab_par_11 {width: 9.09%;}
+.tab_par_12 {width: 8.33%;}
+.tab_par_13 {width: 7.69%;}
+.tab_par_14 {width: 7.14%;}
+.tab_par_15 {width: 6.66%;}
+
+
+/********** Shortcode: Accordion *************************************************************/
+.dnd-accordion{
+	margin-bottom: 60px;
+
+}
+
+.dnd-accordion .ui-accordion-header { 
+	display: block; 
+	cursor: pointer; 
+	position: relative;
+	border: 1px solid #eeeeee;
+	color:#666;
+	font-weight:700;
+	padding: 8px 0 7px 17px;
+	margin-top: 10px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	font-size: 15px;
+	font-weight: 700;
+	background: #fff;
+	-webkit-box-shadow: 0px 1px #f7f7f8;
+	box-shadow: 0px 1px #f7f7f8;
+
+}
+
+.ui-accordion-header.ui-state-hover{
+	color: #fff!important;
+	background: #e4664d!important;
+	-webkit-box-shadow: inset 0px 2px 0px 0px #666;
+	-moz-box-shadow:    inset 0px 2px 0px 0px #666;
+	box-shadow:         inset 0px 2px 0px 0px #666;
+	transition: all 300ms ease-in-out;
+	-webkit-transition: all 300ms ease-in-out;
+}
+
+.dnd-accordion .ui-accordion-header-active { 
+	color:#fff;
+	background: #e4664d!important;
+	-webkit-box-shadow: inset 0px 2px 0px 0px #666;
+	-moz-box-shadow:    inset 0px 2px 0px 0px #666;
+	box-shadow:         inset 0px 2px 0px 0px #666;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+.dnd-accordion .ui-accordion-header:first-child{
+	margin-top: 0;
+}
+
+.dnd-accordion .ui-accordion-content { 
+	overflow: auto; 
+	border: 1px solid #eeeeee;
+	background: #fff;
+	border-top: 0;
+	padding: 18px 20px 23px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-bottom-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-bottom-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.dnd-accordion .ui-accordion-header-icon{
+	display: block;
+	width: 13px;
+	height: 13px;
+	position: absolute;
+	right: 20px;
+	top: 25px;
+}
+
+.dnd-accordion .ui-icon-triangle-1-s,
+.dnd-accordion .ui-icon-triangle-1-e{
+	height: 2px;
+	width: 14px;
+	background: #fff;
+}
+
+.dnd-accordion .ui-icon-triangle-1-e{
+	background: #666;
+}
+
+.dnd-accordion .ui-icon-triangle-1-e:before{
+	content: "";
+	display: block;
+	height: 14px;
+	width: 2px;
+	background: #666;
+	position: relative;
+	top: -6px;
+	left: 6px;
+}
+
+.ui-state-hover .ui-icon-triangle-1-e:before{
+	background: #fff;
+	content: "";
+}
+
+.ui-state-hover .ui-icon-triangle-1-e{
+	background: #fff;
+	content: "";
+}
+
+.ui-state-hover .ui-icon-triangle-1-s{
+	content: "";
+}
+
+.dnd-accordion.dnd_accordion_circled_icons .ui-accordion-header:before{
+	content: "";
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	border: 1px solid #666;
+	border-radius: 50%;
+	right: 15px;
+	top: 12px;
+}
+
+.dnd-accordion.dnd_accordion_circled_icons .ui-accordion-header.ui-state-hover:before{
+	border: 1px solid #fff;
+}
+
+
+.dnd-accordion.dnd_accordion_circled_icons .ui-accordion-header-active:before{
+	border: 1px solid #fff;
+}
+
+.dnd-accordion.dnd_accordion_circled_icons .ui-icon-triangle-1-e{
+	width: 0;
+	right: 37px;
+}
+
+.dnd-accordion.dnd_accordion_circled_icons .ui-icon-triangle-1-e:before{
+	content: "";
+	width: 14px;
+	height: 2px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	left: 2px;
+}
+
+.dnd-accordion.dnd_accordion_circled_icons .ui-icon-triangle-1-e:after{
+	content: "";
+	width: 2px;
+	height: 14px;
+	position: absolute;
+	background: #666;
+	top: -6px;
+	left: 8px;
+}
+
+.dnd-accordion.dnd_accordion_circled_icons .ui-icon-triangle-1-s{
+	width: 14px;
+	height: 2px;
+	position: absolute;
+	right: 21px;
+}
+
+.ui-state-hover .dnd_accordion_circled_icons .ui-accordion-header:before{
+	color: #fff!important;
+	border: 1px solid #fff !important;
+	background: transparent;
+}
+
+.dnd_accordion_circled_icons .ui-state-hover.ui-accordion-header-active:before{
+	color: #fff!important;
+	border: 1px solid #fff !important;
+	background: transparent;
+}
+
+.dnd_accordion_circled_icons .ui-state-hover .ui-icon-triangle-1-e:before{
+	background: #fff;
+	content: "";
+}
+
+.dnd_accordion_circled_icons .ui-state-hover .ui-icon-triangle-1-e:after{
+	background: #fff;
+	content: "";
+}
+
+.dnd_accordion_circled_icons .ui-state-hover .ui-icon-triangle-1-s{
+	background: #fff;
+	content: "";
+}
+
+.dnd-accordion.dnd_accordion_icons_left .ui-accordion-header{
+	padding-left: 50px;
+}
+
+
+.dnd-accordion.dnd_accordion_icons_left .ui-accordion-header:before{
+	left: 14px;
+	top: 15px;
+}
+
+.dnd-accordion.dnd_accordion_icons_left .ui-state-hover.ui-accordion-header:before{
+	border: 1px solid #fff;
+}
+
+.dnd-accordion.dnd_accordion_icons_left .ui-accordion-header-active:before{
+	left: 14px;
+	top: 15px;
+	right: 0;
+}
+
+.dnd-accordion.dnd_accordion_icons_left .ui-icon-triangle-1-e{
+	width: 0;
+	right: 0px;
+	left: 21px;
+}
+
+.dnd-accordion.dnd_accordion_icons_left .ui-icon-triangle-1-e:before{
+	content: "";
+	width: 14px;
+	height: 2px;
+	position: absolute;
+	left: 0px;
+	top: 2px;
+	right: 0;
+}
+
+.dnd-accordion.dnd_accordion_icons_left .ui-icon-triangle-1-e:after{
+	content: "";
+	width: 2px;
+	height: 14px;
+	position: absolute;
+	background: #666;
+	right: -8px;
+	left: auto;
+	top: -4px;
+}
+
+.dnd-accordion.dnd_accordion_icons_left .ui-state-hover .ui-icon-triangle-1-e:after{
+	background: #fff;
+	content: "";
+}
+
+.dnd-accordion.dnd_accordion_icons_left .ui-icon-triangle-1-s{
+	width: 14px;
+	height: 2px;
+	position: absolute;
+	right: 0;
+	left: 20px;
+	bottom: 22px;
+	top: auto;
+}
+
+.dnd-accordion.dnd_accordion_borderless .ui-accordion-header{
+	border-left: 0px;
+	border-right: 0px;
+	border-radius: 0px;
+	border-bottom: 0;
+	background: #f5f5f5;
+	transition: all 300ms ease-in-out;
+	-webkit-transition: all 300ms ease-in-out;	
+}
+
+.dnd-accordion.dnd_accordion_borderless .dnd-accordion-body{
+	border: 0px;
+	padding: 18px 5px 23px;
+}
+
+/********** Shortcode: Toggle *************************************************************/
+.dnd-toggle{
+	margin-bottom: 20px;
+}
+
+/*.dnd-toggle.dnd-accordion.dnd_accordion_icons_left .ui-icon-triangle-1-e:after {
+	content: "";
+	width: 2px;
+	height: 10px;
+	position: absolute;
+	background: #eeeeee;
+	right: -5px;
+	left: auto;
+	top: auto;
+	bottom: -5px;
+} */
+
+/********** Shortcode: Tables *************************************************************/
+.dnd-table table{
+	margin-bottom: 60px;
+	border-spacing: 0;
+	border: 1px solid #eeeeee;
+}
+
+.dnd-table th{
+	font-family: Lato;
+	font-weight: 700;
+	font-size: 14px;
+	color: #3b4550;
+	text-align: left;
+	background: #f5f6f8;
+	padding: 4px 20px;
+	border-left: 1px solid #eeeeee;
+}
+
+.dnd-table th:first-child {
+	 border-left: 0px;
+}
+
+.dnd-table th:last-child {
+}
+
+.dnd-table td{
+	border-left: 1px solid #eeeeee;
+	border-top: 1px solid #eeeeee;
+	padding: 4px 20px;
+}
+
+.dnd-table td:first-child {
+	border-left: 0px solid #eeeeee;
+}
+
+.dnd-table.dnd-table-alternative th{
+	color: #fff;
+	background: #e4664d;
+	padding: 4px 20px;
+	border-left: 0px;
+}
+
+.dnd-table.dnd-table-alternative td{
+		padding: 4px 20px;
+}
+
+.dnd-table-condensed table{
+}
+
+.dnd-table-hover table tr,
+.dnd-table-striped table tr,
+.dnd-table-condensed table tr{
+	border-top: 1px solid #eee !important;
+}
+
+.dnd-table-hover table th,
+.dnd-table-striped table th,
+.dnd-table-condensed table th,
+.dnd-table-hover table td,
+.dnd-table-striped table td,
+.dnd-table-condensed table td{
+	padding: 2px 10px;
+}
+
+.dnd-table-striped table tr:nth-child(2n){
+	background: #f5f6f8;
+}
+
+.dnd-table-hover table tr:hover{
+	background: #efefef;
+}
+
+
+/********** Shortcode: Alert boxes *************************************************************/
+.dnd_alert_success,
+.dnd_alert_info,
+.dnd_alert_warning,
+.dnd_alert_error{
+	margin-bottom: 20px;
+	padding: 7px 15px;
+	position: relative;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.dnd_alert_success i,
+.dnd_alert_info i,
+.dnd_alert_warning i,
+.dnd_alert_error i{
+	margin-right: 15px;
+}
+
+.dnd_alert_success,
+.dnd_alert_success .dnd_alert_box_close{
+	background: #eefbee;
+	color: #73b96a;
+	border: 1px solid #c8e9c8;
+}
+
+.dnd_alert_info,
+.dnd_alert_info .dnd_alert_box_close{
+	background: #eff5fa;
+	color: #50a2de;
+	border: 1px solid #cddeec;
+}
+
+.dnd_alert_warning,
+.dnd_alert_warning .dnd_alert_box_close{
+	background: #faf6e9;
+	color: #a88558;
+	border: 1px solid #e9dfbd;
+}
+
+.dnd_alert_error,
+.dnd_alert_error .dnd_alert_box_close{
+	background: #fef0ef;
+	color: #f05347;
+	border: 1px solid #f1c0bc;
+}
+
+.dnd_alert_success .dnd_alert_box_close,
+.dnd_alert_info .dnd_alert_box_close,
+.dnd_alert_warning .dnd_alert_box_close,
+.dnd_alert_error .dnd_alert_box_close{
+	border: none;
+	background: none;
+	cursor: pointer;
+	position: absolute;
+	top: 7px;
+	right: 15px;
+}
+
+
+/********** Shortcode: Blockquote *************************************************************/
+.dnd_blockquote{
+	margin-bottom: 42px;
+}
+
+
+.dnd_blockquote p{
+	font-family: Lato, sans-serif;
+	font-size: 18px;
+	line-height: 28px;
+	color: #3b4550;
+	font-style: italic;
+	margin-bottom: 0px;
+}
+
+.dnd_blockquote p>small{
+	margin-top: 9px;
+}
+
+.dnd_blockquote small{
+	font-size: 13px;
+	display: block;
+	color: #e4664d;
+}
+
+.dnd_blockquote small small{
+	font-size: 13px;
+	line-height: 24px;
+	color: #91a6b1;
+}
+
+/** Style 1 **/
+
+.dnd_blockquote_style1{
+	padding: 22px 15px 21px 30px;
+	position: relative;
+	border-left: 0;
+}
+
+.dnd_blockquote_style1:after{
+	content: "{";
+	position: absolute;
+	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+	color: #eee;
+	top: 50px;
+	left: -5px;
+	font-size: 90px;
+	z-index: -1;
+}
+
+.dnd_blockquote_style1 p > small a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #e4664d;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.dnd_blockquote_style1 p > small a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.dnd_blockquote_style1 a{
+  position: relative;
+  color: #e4664d;
+  text-decoration: none;
+}
+
+.dnd_blockquote_style1 a:hover{
+	color: #e4664d;
+}
+
+/** Style 2 **/
+
+.dnd_blockquote_style2{
+	padding: 22px 15px 21px 30px;
+	position: relative;
+	border-left: 0;
+}
+
+.dnd_blockquote_style2:before{
+	content:'\2018 \2018';
+	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+	position: absolute;
+	color: #e4664d;
+	top: 10px;
+	left: 0;
+	font-size: 70px;
+	letter-spacing:-10px;
+}
+
+.dnd_blockquote_style2:after{
+	content:'\2019 \2019';
+	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+	position: absolute;
+	color: #e4664d;
+	bottom: 10px;
+	right: 0;
+	font-size: 70px;
+	letter-spacing:-10px;
+}
+
+.dnd_blockquote_style2 p > small a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #e4664d;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.dnd_blockquote_style2 p > small a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.dnd_blockquote_style2 a{
+  position: relative;
+  color: #e4664d;
+  text-decoration: none;
+}
+
+.dnd_blockquote_style2 a:hover{
+	color: #e4664d;
+}
+
+/** Style 3 **/
+
+.dnd_blockquote_style3{
+	padding: 22px 15px 21px 30px;
+	background: #f5f5f5;
+	border-radius: 0px;
+	border-left: 4px solid #e4664d;
+}
+
+.dnd_blockquote_style3 p > small a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #e4664d;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.dnd_blockquote_style3 p > small a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.dnd_blockquote_style3 a{
+  position: relative;
+  color: #e4664d;
+  text-decoration: none;
+}
+
+.dnd_blockquote_style3 a:hover{
+	color: #f5f6f8;
+}
+
+/** Style 4 **/
+
+.dnd_blockquote_style4{
+	padding: 22px 15px 21px 30px;
+	background: #e4664d;
+	border-radius: 4px;
+	border-left: 0;
+}
+
+.dnd_blockquote_style4 p{
+	color: #fff;
+}
+
+.dnd_blockquote_style4 a{
+	color: #fff;
+}
+
+.dnd_blockquote_style4 p > small a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.dnd_blockquote_style4 p > small a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.dnd_blockquote_style4 a{
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+}
+
+.dnd_blockquote_style4 a:hover{
+	color: #fff;
+}
+
+.dnd_blockquote_style4 small{
+	color: #fff;
+}
+
+/** Wide **/
+
+.dnd_blockquote_wide{
+	padding: 20px 110px;
+	position: relative;
+	margin-bottom: 13px;
+	text-align: center;
+	border-left: 0;
+}
+
+.dnd_blockquote_wide .quotation_mark{
+	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+	color: #e4664d!important;
+	font-size: 94px;
+	line-height: 20px;
+	letter-spacing: -7px;
+	border-left: 1px solid #e4664d;
+	border-right: 1px solid #e4664d;
+	display: inline-block;
+	padding: 22px 15px 0 10px;
+	margin: 0 0 67px;
+	vertical-align: bottom;
+	height: 20px;
+	position: relative;
+}
+
+.white_text .dnd_blockquote_wide .quotation_mark{
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+}
+
+.dnd_blockquote_wide .quotation_mark:before{
+	content:"";
+	border-bottom: 1px solid #e4664d;
+	width: 20px;
+	height: 0;
+	position: absolute;
+	bottom: 50%;
+    left:-20px;
+}
+
+.dnd_blockquote_wide .quotation_mark:after{
+	content:"";
+	border-bottom: 1px solid #e4664d;
+	width: 20px;
+	height: 0;
+	position: absolute;
+	bottom: 50%;
+    right:-20px;
+}
+
+.white_text .dnd_blockquote_wide .quotation_mark:after,
+.white_text .dnd_blockquote_wide .quotation_mark:before{
+	border-bottom: 1px solid #fff;
+}
+
+.dnd_blockquote_wide p{
+	font-family: Lato, sans-serif;
+	font-weight: 300!important;
+	font-style: normal;
+	font-size: 36px;
+	line-height: 47px;
+}
+
+.white_text .dnd_blockquote_wide p{
+	color: #fff;
+}
+
+.dnd_blockquote_wide p small{
+	font-family: Lato, sans-serif;
+	font-weight: 400;
+	font-size:18px;
+	line-height: 25px;
+	margin-top: 40px;
+	padding-top: 10px;
+	color: #e4664d!important;
+	position: relative;
+}
+
+.dnd_blockquote_wide p small:after{
+	content: "";
+	width: 160px;
+	height: 1px;
+	background: #e4664d;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -80px;
+}
+.white_text .dnd_blockquote_wide p small:after{
+	background: #fff;
+}
+
+.dnd_blockquote.white_text,
+.dnd_blockquote.white_text p,
+.dnd_blockquote.white_text p small{
+	color: #fff;
+}
+
+
+/********** Shortcode: UL *************************************************************/
+.dnd_shortcode_ul{
+	list-style: none !important;
+}
+
+.dnd_shortcode_ul li{
+	list-style: none !important;
+	line-height: 29px;
+	position: relative;
+}
+
+.dnd_shortcode_ul li i{
+	color: #3b4550;
+	font-size: 15px;
+	margin-right: 10px;
+	position: relative;
+	top: 2px;
+}
+
+.dnd_shortcode_ul li i.whhg-play{
+	font-size: 8px;
+}
+
+.dnd_shortcode_ul li i.whhg-chevron-right{
+	font-size: 8px;
+}
+
+.dnd_shortcode_ul li i.whhg-record{
+	font-size: 6px;
+}
+
+
+/********** Shortcode: Follow us links *************************************************************/
+.dnd_follow_us{
+	font-size: 16px;
+}
+
+.dnd_follow_us a{
+	margin-right: 10px;
+	text-decoration: none;
+	display: inline-block;
+	background: #f5f6f8;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color:#9fa4af;
+	margin-bottom: 10px;
+	font-size: 13px;
+}
+
+.dnd_follow_us a:hover i{
+	color: #fff;
+}
+
+.info .dnd_follow_us{
+	margin-top: -4px;
+}
+
+.info .dnd_follow_us a{
+	margin-right: 10px;
+	text-decoration: none;
+	display: inline-block;
+	background: #f5f6f8;
+	width: 36px;
+	height: 36px;
+	text-align: center;
+	color:#666;
+	margin-bottom: 20px;
+	font-size: 14px;
+}
+
+.info .dnd_follow_us a i{
+	line-height: 36px;
+	font-size: 15px;
+}
+
+.white_social .dnd_follow_us{
+	margin-top: -4px;
+}
+
+.white_social .dnd_follow_us a{
+	margin-right: 10px;
+	text-decoration: none;
+	display: inline-block;
+	background: #fff;
+	width: 36px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	color:#c5c9d2;
+	margin-bottom: 20px;
+	font-size: 13px;
+}
+
+.gray_social .dnd_follow_us a{
+	margin-right: 10px;
+	text-decoration: none;
+	display: inline-block;
+	background: #f5f6f8;
+	width: 36px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	color:#c5c9d2;
+	margin-bottom: 20px;
+	font-size: 13px;
+}
+
+.dnd_section_dd.big_social_icons .dnd_follow_us .dnd_socialicon{
+	width: 72px;
+	height: 72px;
+	background: -webkit-linear-gradient(#fff, #f5f6f8); 
+    background: -o-linear-gradient(#fff, #f5f6f8); 
+    background: -moz-linear-gradient(#fff, #f5f6f8);
+    background: linear-gradient(#fff, #f5f6f8);
+    border: 1px solid #eeeeee;
+    position: relative;
+    text-align: center;
+    top: -7px;
+    margin-right: 12px;
+    margin-bottom: 10px;
+}
+
+.dnd_section_dd.big_social_icons .dnd_follow_us .dnd_socialicon i {
+	font-size: 32px;
+	color: #9fa4af;
+
+	line-height: 66px;
+	-webkit-transition:all 180ms ease-in;
+	transition:all 180ms ease-in;
+}
+
+.dnd_section_dd.big_social_icons .dnd_follow_us .dnd_socialicon:hover i{
+	-webkit-transition:all 180ms ease-in;
+	transition:all 180ms ease-in;
+}
+
+.dnd_section_dd.big_social_icons .dnd_follow_us .dnd_socialicon_facebook:hover i{color: #3B5998;}
+.dnd_section_dd.big_social_icons .dnd_follow_us .dnd_socialicon_twitter:hover i{color: #4099FF;}
+.dnd_section_dd.big_social_icons .dnd_follow_us .dnd_socialicon_googleplus:hover i{color: #d34836;}
+.dnd_section_dd.big_social_icons .dnd_follow_us .dnd_socialicon_linkedin:hover i{color: #0e76a8;}
+.dnd_section_dd.big_social_icons .dnd_follow_us .dnd_socialicon_youtube:hover i{color: #c4302b;}
+.dnd_section_dd.big_social_icons .dnd_follow_us .dnd_socialicon_pinterest:hover i{color: #c8232c;}
+.dnd_section_dd.big_social_icons .dnd_follow_us .dnd_socialicon_github:hover i{color: #171515;}
+.dnd_section_dd.big_social_icons .dnd_follow_us .dnd_socialicon_feed:hover i{color: #ee802f;}
+.dnd_section_dd.big_social_icons .dnd_follow_us .dnd_socialicon_behance:hover i{color: #1769ff;}
+.dnd_section_dd.big_social_icons .dnd_follow_us .dnd_socialicon_blogger_blog:hover i{color: #f57d00;}
+.dnd_section_dd.big_social_icons .dnd_follow_us .dnd_socialicon_delicious:hover i{color: #3399ff;}
+.dnd_section_dd.big_social_icons .dnd_follow_us .dnd_socialicon_designcontest:hover i{color: #5faad2;}
+.dnd_section_dd.big_social_icons .dnd_follow_us .dnd_socialicon_deviantart:hover i{color: #4e6252;}
+.dnd_section_dd.big_social_icons .dnd_follow_us .dnd_socialicon_digg:hover i{color: #000;}
+.dnd_section_dd.big_social_icons .dnd_follow_us .dnd_socialicon_dribbble:hover i{color: #ea4c89;}
+.dnd_section_dd.big_social_icons .dnd_follow_us .dnd_socialicon_dropbox:hover i{color: #007ee5;}
+.dnd_section_dd.big_social_icons .dnd_follow_us .dnd_socialicon_emailalt:hover i{color: #ed1c16;}
+.dnd_section_dd.big_social_icons .dnd_follow_us .dnd_socialicon_flickr:hover i{color: #ff0084;}
+.dnd_section_dd.big_social_icons .dnd_follow_us .dnd_socialicon_forrst:hover i{color: #5b9a68;}
+.dnd_section_dd.big_social_icons .dnd_follow_us .dnd_socialicon_instagram:hover i{color: #3f729b;}
+.dnd_section_dd.big_social_icons .dnd_follow_us .dnd_socialicon_lastfm:hover i{color: #c3000d;}
+.dnd_section_dd.big_social_icons .dnd_follow_us .dnd_socialicon_myspace:hover i{color: #313131;}
+.dnd_section_dd.big_social_icons .dnd_follow_us .dnd_socialicon_picasa:hover i{color: #9a45a0;}
+.dnd_section_dd.big_social_icons .dnd_follow_us .dnd_socialicon_skype:hover i{color: #00aff0;}
+.dnd_section_dd.big_social_icons .dnd_follow_us .dnd_socialicon_stumbleupon:hover i{color: #f74425;}
+.dnd_section_dd.big_social_icons .dnd_follow_us .dnd_socialicon_vimeo:hover i{color: #44bbff;}
+.dnd_section_dd.big_social_icons .dnd_follow_us .dnd_socialicon_zerply:hover i{color: #9dcc7a;}
+
+
+.dnd_follow_us a:hover{
+	text-decoration: none;
+	background: #999;
+	color:#fff;
+}
+
+.dnd_follow_us .dnd_socialicon_facebook:hover{background: #3B5998;}
+.dnd_follow_us .dnd_socialicon_twitter:hover{background: #4099FF;}
+.dnd_follow_us .dnd_socialicon_googleplus:hover{background: #d34836;}
+.dnd_follow_us .dnd_socialicon_linkedin:hover{background: #0e76a8;}
+.dnd_follow_us .dnd_socialicon_youtube:hover{background: #c4302b;}
+.dnd_follow_us .dnd_socialicon_pinterest:hover{background: #c8232c;}
+.dnd_follow_us .dnd_socialicon_github:hover{background: #171515;}
+.dnd_follow_us .dnd_socialicon_feed:hover{background: #ee802f;}
+.dnd_follow_us .dnd_socialicon_behance:hover{background: #1769ff;}
+.dnd_follow_us .dnd_socialicon_blogger_blog:hover{background: #f57d00;}
+.dnd_follow_us .dnd_socialicon_delicious:hover{background: #3399ff;}
+.dnd_follow_us .dnd_socialicon_designcontest:hover{background: #5faad2;}
+.dnd_follow_us .dnd_socialicon_deviantart:hover{background: #4e6252;}
+.dnd_follow_us .dnd_socialicon_digg:hover{background: #000;}
+.dnd_follow_us .dnd_socialicon_dribbble:hover{background: #ea4c89;}
+.dnd_follow_us .dnd_socialicon_dropbox:hover{background: #007ee5;}
+.dnd_follow_us .dnd_socialicon_emailalt:hover{background: #ed1c16;}
+.dnd_follow_us .dnd_socialicon_flickr:hover{background: #ff0084;}
+.dnd_follow_us .dnd_socialicon_forrst:hover{background: #5b9a68;}
+.dnd_follow_us .dnd_socialicon_instagram:hover{background: #3f729b;}
+.dnd_follow_us .dnd_socialicon_lastfm:hover{background: #c3000d;}
+.dnd_follow_us .dnd_socialicon_myspace:hover{background: #313131;}
+.dnd_follow_us .dnd_socialicon_picasa:hover{background: #9a45a0;}
+.dnd_follow_us .dnd_socialicon_skype:hover{background: #00aff0;}
+.dnd_follow_us .dnd_socialicon_stumbleupon:hover{background: #f74425;}
+.dnd_follow_us .dnd_socialicon_vimeo:hover{background: #44bbff;}
+.dnd_follow_us .dnd_socialicon_zerply:hover{background: #9dcc7a;}
+
+
+
+/********** Shortcode: Stats Excerpt *************************************************************/
+.dnd_stats_excerpt{
+	text-align: center;
+	position: relative;
+	margin-bottom: 40px;
+}
+
+.dnd_stats_excerpt i{
+	font-size: 64px;
+	line-height: 64px;
+	top: 0;
+	display: block;
+	margin-bottom: 21px;
+}
+
+.dnd_stats_excerpt .dnd_stats_number_sign{
+	font-size: 52px;
+	line-height: 70px;
+	font-weight: 700;
+	font-family: Lato;
+	display: inline-block;
+}
+
+.dnd_stats_excerpt .dnd_stats_number{
+	font-size: 52px;
+	line-height: 50px;
+	font-weight: 700;
+	font-family: Lato;
+}
+
+.dnd_stats_excerpt p{
+	font-size: 24px;
+	font-weight: 300;
+	font-family: Lato;
+	margin-top: 15px;
+	margin-bottom: 14px;
+}
+
+.pattern_overlayed .dnd_stats_excerpt{
+	color: #fff;
+}
+
+.pattern_overlayed .dnd_stats_excerpt i{
+	color: #fff;
+}
+
+.white_text .dnd_stats_excerpt .dnd_stats_number_sign{
+	color: #fff;
+}
+
+.dnd_stats_excerpt_1{
+	text-align: center;
+	position: relative;
+	margin-bottom: 40px;
+	padding-top: 50px;
+}
+
+.dnd_stats_excerpt_1 i{
+	color: #097d89;
+	font-size: 36px;
+	line-height: 43px;
+	display: block;
+	margin-bottom: 20px;
+}
+
+.dnd_stats_excerpt_1 .dnd_stats_number_sign{
+	font-size: 52px;
+	line-height: 62px;
+	font-weight: 700;
+	font-family: Lato;
+	display: inline;
+	letter-spacing: 0.5px;
+}
+
+.dnd_stats_excerpt_1 .dnd_stats_number{
+	font-size: 52px;
+	line-height: 62px;
+	font-weight: 700;
+	font-family: Lato;
+}
+
+.dnd_stats_excerpt_1 .dnd_stats_number:after{
+	display: none;
+}
+
+.dnd_stats_excerpt_1 p{
+	font-size: 24px;
+	font-weight: 300;
+	font-family: Lato;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	margin: 0;
+}
+
+.dnd_stats_excerpt_2{
+	border: 1px solid #eeeeee;
+	background: #fff;
+	border-radius: 2px;
+	padding: 30px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-top: 5px;
+}
+
+.dnd_stats_excerpt_2 i{
+	font-size: 34px;
+	line-height: 28px;
+	margin-bottom: 10px;
+}
+
+.dnd_stats_excerpt_2 p{
+	color: #3b4550;
+}
+
+.dnd_stats_excerpt_2 .dnd_stats_number_sign,
+.dnd_stats_excerpt_2 .dnd_stats_number,
+.dnd_stats_excerpt_2 p{
+	font-size: 14px;
+	line-height: 28px;
+	font-weight: 700;
+	display: inline;
+}
+
+ .dnd_stats_excerpt_2 .dnd_stats_number:after{
+	content: "";
+	display: none;
+}
+
+
+
+/********** Shortcode: Knob *************************************************************/
+.dnd_knob_wrapper{
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.dnd_knob_inner_wrap{
+	position: relative;
+	text-align: center;
+	margin-bottom: 17px;
+}
+
+.dnd_knob_wrapper input{
+	display: none;
+}
+
+.dnd_knob_wrapper h3{
+	font-size: 20px;
+	margin-bottom: 0;
+}
+
+.dnd_knob_wrapper .dnd_knob_number_sign{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	visibility: hidden;
+	font-size: 50px;
+	font-family: Lato;
+	font-weight: 700;
+	z-index: 2;
+}
+
+
+/********** Shortcode: Team *************************************************************/
+.dnd_team_member{
+	text-align: center;
+	padding-bottom: 22px;
+}
+
+.dnd_team_member .dnd_overlayed{
+	position: relative; 
+	line-height: 1;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.dnd_team_member .dnd_overlayed .dnd_overlay {
+	width: 100%; 
+	height: 100%; 
+	position: absolute; 
+	overflow: hidden; 
+	top: 0; 
+	left: 0; 
+	filter: alpha(opacity=0); 
+	opacity: 0; 
+	background:#e4664d!important; 	
+	-webkit-transition: all 0.4s ease-in-out; 
+	-moz-transition: all 0.4s ease-in-out; 
+	-o-transition: all 0.4s ease-in-out; 
+	-ms-transition: all 0.4s ease-in-out; 
+	transition: all 0.4s ease-in-out; 
+}
+
+.dnd_team_member:hover .dnd_overlayed .dnd_overlay {
+	filter: alpha(opacity=100); 
+	opacity: 1; 
+	background:#e4664d!important; 
+}
+
+.dnd_team_member .dnd_overlayed .dnd_overlay p{
+	position: absolute;
+	bottom: 25px;
+	left: 20px;
+	margin-bottom: 0;
+}
+
+.dnd_team_member .dnd_overlayed .dnd_overlay p a{
+	color: #fff;
+	text-decoration: none;
+	width: 30px;
+	height: 30px;
+	background: rgba(0,0,0,0.3);
+	line-height: 30px;
+	margin: 0 5px 5px 0;
+	display: inline-block;
+}
+
+.dnd_team_member .team_content{
+	position: absolute;
+	top: 0;
+	left: 0!important;
+	padding: 30px 20px;
+	text-align: left;
+	color: #fff;
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.dnd_team_member .dnd_overlayed .dnd_overlay p a:hover{
+	color: #fff;
+	-webkit-transition:all 180ms ease-in;
+	transition:all 180ms ease-in;
+}
+
+.dnd_team_member .dnd_overlayed .dnd_overlay p a i{
+	-webkit-transition:all 180ms ease-in;
+	transition:all 180ms ease-in;	
+}
+
+.dnd_team_member .dnd_overlayed .dnd_overlay p a:hover i{
+	-webkit-transition:all 180ms ease-in;
+	transition:all 180ms ease-in;	
+}
+
+.dnd_team_member .dnd_overlayed .dnd_overlay p a:hover .ci_icon-facebook{color: #3B5998;}
+.dnd_team_member .dnd_overlayed .dnd_overlay p a:hover .ci_icon-twitter{color: #4099FF;}
+.dnd_team_member .dnd_overlayed .dnd_overlay p a:hover .ci_icon-google-plus{color: #d34836;}
+.dnd_team_member .dnd_overlayed .dnd_overlay p a:hover .ci_icon-linkedin{color: #0e76a8;}
+.dnd_team_member .dnd_overlayed .dnd_overlay p a:hover .ci_icon-youtube{color: #c4302b;}
+.dnd_team_member .dnd_overlayed .dnd_overlay p a:hover .ci_icon-pinterest{color: #c8232c;}
+.dnd_team_member .dnd_overlayed .dnd_overlay p a:hover .ci_icon-github{color: #171515;}
+.dnd_team_member .dnd_overlayed .dnd_overlay p a:hover .ci_icon-rss{color: #ee802f;}
+.dnd_team_member .dnd_overlayed .dnd_overlay p a:hover .ci_icon-behance{color: #1769ff;}
+.dnd_team_member .dnd_overlayed .dnd_overlay p a:hover .ci_icon-blogger{color: #f57d00;}
+.dnd_team_member .dnd_overlayed .dnd_overlay p a:hover .ci_icon-delicious{color: #3399ff;}
+.dnd_team_member .dnd_overlayed .dnd_overlay p a:hover .ci_icon-designcontest{color: #5faad2;}
+.dnd_team_member .dnd_overlayed .dnd_overlay p a:hover .ci_icon-deviantart{color: #4e6252;}
+.dnd_team_member .dnd_overlayed .dnd_overlay p a:hover .ci_icon-digg{color: #000;}
+.dnd_team_member .dnd_overlayed .dnd_overlay p a:hover .ci_icon-dribbble{color: #ea4c89;}
+.dnd_team_member .dnd_overlayed .dnd_overlay p a:hover .ci_icon-dropbox{color: #007ee5;}
+.dnd_team_member .dnd_overlayed .dnd_overlay p a:hover .ci_icon-envelope{color: #ed1c16;}
+.dnd_team_member .dnd_overlayed .dnd_overlay p a:hover .ci_icon-flickr{color: #ff0084;}
+.dnd_team_member .dnd_overlayed .dnd_overlay p a:hover .ci_icon-forrst{color: #5b9a68;}
+.dnd_team_member .dnd_overlayed .dnd_overlay p a:hover .ci_icon-instagram{color: #3f729b;}
+.dnd_team_member .dnd_overlayed .dnd_overlay p a:hover .ci_icon-lastfm{color: #c3000d;}
+.dnd_team_member .dnd_overlayed .dnd_overlay p a:hover .ci_icon-myspace{color: #313131;}
+.dnd_team_member .dnd_overlayed .dnd_overlay p a:hover .ci_icon-picassa{color: #9a45a0;}
+.dnd_team_member .dnd_overlayed .dnd_overlay p a:hover .ci_icon-skype{color: #00aff0;}
+.dnd_team_member .dnd_overlayed .dnd_overlay p a:hover .ci_icon-stumbleupon{color: #f74425;}
+.dnd_team_member .dnd_overlayed .dnd_overlay p a:hover .ci_icon-vimeo{color: #44bbff;}
+.dnd_team_member .dnd_overlayed .dnd_overlay p a:hover .ci_icon-zerply{color: #9dcc7a;}
+
+
+.dnd_team_member .dnd_overlayed .dnd_overlay i{
+	font-size: 16px;
+	margin: 0 7px;
+	line-height: 30px;
+}
+
+
+.dnd_team_member .dnd_team_member_name{
+	display: block;
+	font-family: Lato, sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 29px;
+	color: #666666;
+	margin-top: 21px;
+	margin-bottom: 3px;
+	-webkit-transition:all 180ms ease-in;
+	transition:all 180ms ease-in;
+}
+
+.dnd_team_member .dnd_team_member_name:hover{
+	color: #e4664d;
+	-webkit-transition:all 180ms ease-in;
+	transition:all 180ms ease-in;
+}
+
+.dnd_team_member .dnd_team_member_position{
+	display: block;
+	font-style: italic;
+	font-size: 12px;
+	line-height: 14px;
+	color: #999999;
+}
+
+.dnd_team_member_modal{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: #fff;
+	z-index: 9999;
+	overflow-y: auto;
+	padding-top: 80px;
+	text-align: left;
+	width: 100%;
+}
+
+.dnd_team_member_modal h4,
+.dnd_team_member_modal .dnd_team_member_position{
+	text-align: center;
+}
+
+.dnd_team_member_modal .dnd_container{
+	max-width: 960px;
+	width:90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.dnd_team_member_modal_close{
+	width: 32px;
+	height: 32px;
+	font-size: 32px;
+	line-height: 32px;
+	position: absolute;
+	top: 60px;
+	right: 60px;
+	cursor: pointer;
+}
+
+.dnd_team_member_social_under{
+	margin-top: 10px;
+}
+
+.dnd_team_member_social_under a{
+	color: #fff;
+	text-decoration: none;
+	width: 30px;
+	height: 30px;
+	background: rgba(0,0,0,0.3);
+	line-height: 30px;
+	margin: 0 5px 5px 0;
+	display: inline-block;
+	-webkit-transition:all 180ms ease-in;
+	transition:all 180ms ease-in;	
+}
+
+.dnd_team_member .dnd_team_member_social_under a i{
+	-webkit-transition:all 180ms ease-in;
+	transition:all 180ms ease-in;	
+}
+
+.dnd_team_member .dnd_team_member_social_under a:hover i{
+	-webkit-transition:all 180ms ease-in;
+	transition:all 180ms ease-in;	
+}
+
+.dnd_team_member .dnd_team_member_social_under a:hover .ci_icon-facebook{color: #3B5998;}
+.dnd_team_member .dnd_team_member_social_under a:hover .ci_icon-twitter{color: #4099FF;}
+.dnd_team_member .dnd_team_member_social_under a:hover .ci_icon-google-plus{color: #d34836;}
+.dnd_team_member .dnd_team_member_social_under a:hover .ci_icon-linkedin{color: #0e76a8;}
+.dnd_team_member .dnd_team_member_social_under a:hover .ci_icon-youtube{color: #c4302b;}
+.dnd_team_member .dnd_team_member_social_under a:hover .ci_icon-pinterest{color: #c8232c;}
+.dnd_team_member .dnd_team_member_social_under a:hover .ci_icon-github{color: #171515;}
+.dnd_team_member .dnd_team_member_social_under a:hover .ci_icon-rss{color: #ee802f;}
+.dnd_team_member .dnd_team_member_social_under a:hover .ci_icon-behance{color: #1769ff;}
+.dnd_team_member .dnd_team_member_social_under a:hover .ci_icon-blogger{color: #f57d00;}
+.dnd_team_member .dnd_team_member_social_under a:hover .ci_icon-delicious{color: #3399ff;}
+.dnd_team_member .dnd_team_member_social_under a:hover .ci_icon-designcontest{color: #5faad2;}
+.dnd_team_member .dnd_team_member_social_under a:hover .ci_icon-deviantart{color: #4e6252;}
+.dnd_team_member .dnd_team_member_social_under a:hover .ci_icon-digg{color: #000;}
+.dnd_team_member .dnd_team_member_social_under a:hover .ci_icon-dribbble{color: #ea4c89;}
+.dnd_team_member .dnd_team_member_social_under a:hover .ci_icon-dropbox{color: #007ee5;}
+.dnd_team_member .dnd_team_member_social_under a:hover .ci_icon-envelope{color: #ed1c16;}
+.dnd_team_member .dnd_team_member_social_under a:hover .ci_icon-flickr{color: #ff0084;}
+.dnd_team_member .dnd_team_member_social_under a:hover .ci_icon-forrst{color: #5b9a68;}
+.dnd_team_member .dnd_team_member_social_under a:hover .ci_icon-instagram{color: #3f729b;}
+.dnd_team_member .dnd_team_member_social_under a:hover .ci_icon-lastfm{color: #c3000d;}
+.dnd_team_member .dnd_team_member_social_under a:hover .ci_icon-myspace{color: #313131;}
+.dnd_team_member .dnd_team_member_social_under a:hover .ci_icon-picassa{color: #9a45a0;}
+.dnd_team_member .dnd_team_member_social_under a:hover .ci_icon-skype{color: #00aff0;}
+.dnd_team_member .dnd_team_member_social_under a:hover .ci_icon-stumbleupon{color: #f74425;}
+.dnd_team_member .dnd_team_member_social_under a:hover .ci_icon-vimeo{color: #44bbff;}
+.dnd_team_member .dnd_team_member_social_under a:hover .ci_icon-zerply{color: #9dcc7a;}
+
+/********** Shortcode: Posts *************************************************************/
+.dnd_posts_shortcode{
+	margin-bottom: 13px;
+	position: relative;
+}
+
+.dnd_latest_news_shortcode_thumb{
+	margin-right: 0px;
+	float: left;
+}
+
+.dnd_latest_news_shortcode_thumb img{
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	width: 100%;
+}
+
+.dnd_latest_news_shortcode_content{
+	background: #fff;
+	border-radius: 5px;
+}
+
+.dnd_latest_news_shortcode_content h5{
+	margin-top: 10px;
+}
+
+.dnd_latest_news_time{
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0;
+	width: 57px;
+	height: 57px;
+	text-align: center;
+	color: #fff;
+	background: #056ab2;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.dnd_latest_news_time .day{
+	display: block;
+	font-size: 21px;
+}
+
+.dnd_latest_news_time .month{
+	display: block;
+	text-transform: lowercase;
+	font-size: 13px;
+}
+
+.dnd_latest_news_time .year{
+	display: none;
+}
+
+.dnd_posts_shortcode.without_thumbnail .dnd_latest_news_shortcode_content{
+	padding-left: 87px;
+}
+
+.dnd_posts_shortcode.dnd_posts_shortcode-1{
+	margin-bottom: 9px;
+}
+
+.dnd_posts_shortcode.dnd_posts_shortcode-1 .dnd_latest_news_shortcode_thumb{
+	margin-right: 0px;
+	width: 170px;
+	float: left;
+}
+
+.dnd_posts_shortcode.dnd_posts_shortcode-1 .dnd_latest_news_shortcode_thumb img{
+	border-radius: 0px;
+}
+
+.dnd_posts_shortcode.dnd_posts_shortcode-1 .dnd_latest_news_shortcode_content{
+	background: #fff;
+	padding-left: 170px;
+}
+
+.dnd_posts_shortcode.dnd_posts_shortcode-1 .dnd_latest_news_shortcode_content h5{
+	font-size: 14px;
+	line-height: 20px;
+	padding: 1px 0px 0 30px;
+	margin-top: 0;
+	margin-bottom: 6px;
+}
+
+.dnd_posts_shortcode.dnd_posts_shortcode-1 .dnd_latest_news_shortcode_content h5 a{
+	color: #3b4550;
+}
+
+.dnd_posts_shortcode.dnd_posts_shortcode-1 .dnd_latest_news_shortcode_content h5:hover a,
+.dnd_posts_shortcode.dnd_posts_shortcode-2 .dnd_latest_news_shortcode_content h5:hover a{
+	color: #E4664D;
+}
+
+.dnd_posts_shortcode.dnd_posts_shortcode-1 .dnd_latest_news_shortcode_content p{
+	padding: 5px 0px 0 30px;	
+}
+
+.dnd_posts_shortcode.dnd_posts_shortcode-1 .dnd_latest_news_shortcode_content .date_container{
+	padding: 0 20px 32px 30px;
+}
+
+.dnd_posts_shortcode.dnd_posts_shortcode-1 .dnd_latest_news_shortcode_content .date_container .dnd_posts_date{
+	display: inline-block;
+	float: left;
+	position: relative;
+}
+
+.dnd_posts_shortcode.dnd_posts_shortcode-1 .dnd_latest_news_shortcode_content .date_container .dnd_posts_comments{
+	display: inline-block;
+	float: left;
+	position: relative;
+	margin-left: 20px;
+}
+
+.dnd_posts_shortcode.dnd_posts_shortcode-1 .dnd_latest_news_shortcode_content .date_container .dnd_posts_comments i{
+	position: relative;
+	top: 0px;
+}
+
+.dnd_posts_shortcode.dnd_posts_shortcode-2 .dnd_latest_news_shortcode_thumb{
+	margin-right: 0px;
+	float: none;
+}
+
+.dnd_posts_shortcode.dnd_posts_shortcode-2 .dnd_latest_news_shortcode_thumb img{
+	width: 100%;
+	border-radius: 0;
+}
+
+.dnd_posts_shortcode.dnd_posts_shortcode-2 .dnd_latest_news_shortcode_content{
+	background: #fff;
+	border:1px solid #eeeeee;
+	margin-top: -15px;
+	border-radius: 0;
+}
+
+.dnd_posts_shortcode.dnd_posts_shortcode-2 .dnd_latest_news_shortcode_content h5{
+	font-size: 14px;
+	line-height: 20px;
+	padding: 30px 30px 0 30px;
+}
+
+.dnd_posts_shortcode.dnd_posts_shortcode-2 .dnd_latest_news_shortcode_content h5 a{
+	color: #3b4550;
+}
+
+.dnd_posts_shortcode.dnd_posts_shortcode-2 .dnd_latest_news_shortcode_content p{
+	padding: 0px 30px 0 30px;	
+}
+
+.dnd_posts_shortcode.dnd_posts_shortcode-2 .dnd_latest_news_shortcode_content .date_container{
+	border-top: 1px solid #eeeeee;
+	padding: 12px 20px 32px 20px;
+}
+
+.dnd_posts_shortcode.dnd_posts_shortcode-2 .dnd_latest_news_shortcode_content .date_container .dnd_posts_date{
+	display: inline-block;
+	float: left;
+	position: relative;
+}
+
+.dnd_posts_shortcode.dnd_posts_shortcode-2 .dnd_latest_news_shortcode_content .date_container .dnd_posts_date i{
+	position: relative;
+	top: 1px;
+}
+
+
+.dnd_posts_shortcode.dnd_posts_shortcode-2 .dnd_latest_news_shortcode_content .date_container .dnd_posts_comments{
+	display: inline-block;
+	float: right;
+	position: relative;
+}
+
+.dnd_posts_shortcode.dnd_posts_shortcode-2 .dnd_latest_news_shortcode_content .date_container .dnd_posts_comments i{
+	position: relative;
+	margin-right: 5px;
+}
+
+
+/********** Shortcode: Priceboxes *************************************************************/
+.dnd_pricing-table-1,
+.dnd_pricing-table-2{
+	text-align: center;
+} 
+
+.dnd_pricebox_feature_button .dnd-button{
+	margin: 20px 0;
+	display: inline-block;
+}
+
+.dnd_pricing-table-1{
+	border: 1px solid #eeeeee;
+	border-radius: 3px;
+	background: #fff;
+	margin: 10px 0;
+}
+
+.dnd_pricing-table-1 .dnd_pricebox_header{
+	text-align: center;
+	padding: 27px 0 0px 0;
+	margin-bottom: 0px;
+	border-bottom: 1px solid #eeeeee;
+}
+
+.dnd_pricing-table-1 .dnd_pricebox_name{
+	font-size: 18px;
+	font-family: Lato;
+	font-weight: 700;
+	text-transform: uppercase;
+	display: block;
+	padding-bottom: 27px;
+	color: #3b4550;
+	border-bottom: 1px solid #eeeeee;
+}
+
+.dnd_pricing-table-1 .dnd_pricebox_info{
+	padding-top: 14px;
+	background: #f5f6f8;
+	padding-bottom: 15px;
+	position: relative;
+}
+
+.dnd_pricing-table-1 .dnd_pricebox_currency{
+	font-size: 40px;
+	font-family: Lato;
+	margin-right: 5px;
+	font-family: Lato;
+	font-weight: 700;
+}
+
+.dnd_pricing-table-1 .dnd_pricebox_price{
+	font-size: 40px;
+	line-height: 60px;
+	font-family: Lato;
+	display: inline-block;
+	font-family: Lato;
+	font-weight: 700;
+}
+
+.dnd_pricing-table-1 .dnd_pricebox_monthly{
+	font-size: 13px;
+	display: block;
+	margin-top: -10px;
+}
+
+.dnd_pricing-table-1 .dnd_pricebox_feature{
+	border-bottom: 1px solid #eeeeee;
+	display: block;
+	padding: 7px 0;
+	text-align: center;
+}
+
+.dnd_pricing-table-1 .dnd_pricebox_feature:last-child{
+	border-bottom: 0px;
+}
+
+.dnd_pricing-table-1 .dnd_pricebox_featured_text{
+	margin-bottom: 3px;
+	min-height: 30px;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	line-height: 30px;
+}
+
+.dnd_pricing-table-1 .dnd_pricebox_decsription{
+	display: block;
+	font-style: italic;
+}
+
+.dnd_pricing-table-1 .dnd_popular-plan .dnd_pricebox_featured_text{
+	background: #434342;
+}
+
+.dnd_pricing-table-1 .dnd_popular-plan .dnd_pricebox_info:after{
+	background-color:#556;
+	background-image: linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+	linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+	linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+	linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+	linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a), 
+	linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
+	background-size:80px 140px;
+	background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+	content:'';
+	top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1; 
+    opacity: 0.2;
+}
+
+.dnd_pricing-table-1.dnd_pricing-table-light .dnd_pricebox_info{
+	background: #f5f6f8;
+	color: #3b4550;
+}
+
+.dnd_pricing-table-1.dnd_pricing-table-dark .dnd_pricebox_info{
+	background: #3b4500;
+	color: #fff;
+}
+
+.dnd_pricing-table-1.dnd_pricing-table-yellow .dnd_pricebox_info{
+	background: #f3ae36;
+	color: #fff;
+}
+
+.dnd_pricing-table-1.dnd_pricing-table-green .dnd_pricebox_info{
+	background: #5bd4b6;
+	color: #fff;
+}
+
+.dnd_pricing-table-1.dnd_pricing-table-red .dnd_pricebox_info{
+	background: #f05347;
+	color: #fff;
+}
+
+.dnd_pricing-table-1.dnd_pricing-table-blue .dnd_pricebox_info{
+	background: #50a2de;
+	color: #fff;
+}
+
+.dnd_pricing-table-1.dnd_pricing-table-gray .dnd_pricebox_info{
+	background: #848994;
+	color: #fff;
+}
+
+.dnd_pricing-table-1.dnd_pricing-table-cyan .dnd_pricebox_info{
+	background: #50c5de;
+	color: #fff;
+}
+
+.dnd_pricing-table-1.dnd_pricing-table-aquamarine .dnd_pricebox_info{
+	background: #5fcbcd;
+	color: #fff;
+}
+
+.dnd_pricing-table-2{
+	background: #fff;
+	position: relative;
+	box-shadow: 0 0 0 1px #eeeeee inset;
+	border-radius: 3px;
+	margin: 10px 0;
+}
+
+.dnd_pricing-table-2 .dnd_pricebox_header{
+	text-align: center;
+	padding: 27px 0 0px 0;
+	margin-bottom: 0px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.dnd_pricing-table-2 .dnd_pricebox_name{
+	font-size: 18px;
+	font-family: Lato;
+	font-weight: 700;
+	text-transform: uppercase;
+	display: block;
+	padding-bottom: 27px;
+	color: #3b4550;
+}
+
+.section_no_column_margin .dnd_pricing-table-2 .dnd_pricebox_header{
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+.section_no_column_margin .dnd_pricing-table-2 .dnd_pricebox_name:first-child {
+	border-top-left-radius: 3px;
+}
+
+.section_no_column_margin .dnd_pricing-table-2 .dnd_pricebox_name:last-child {
+	border-top-right-radius: 3px;
+}
+
+.section_no_column_margin .dnd_pricing-table-2 .dnd_popular-plan .dnd_pricebox_header{
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.dnd_pricing-table-2 .dnd_pricebox_info{
+	padding-top: 14px;
+	padding-bottom: 15px;
+	position: relative;
+	box-shadow: 0 0 0 1px #eeeeee inset;
+}
+
+.dnd_pricing-table-2 .dnd_pricebox_currency{
+	font-size: 40px;
+	font-family: Lato;
+	margin-right: 5px;
+	font-weight: 700;
+}
+
+.dnd_pricing-table-2 .dnd_pricebox_price{
+	font-size: 40px;
+	line-height: 60px;
+	font-family: Lato;
+	display: inline-block;
+	font-weight: 700;
+}
+
+.dnd_pricing-table-2 .dnd_pricebox_monthly{
+	font-size: 13px;
+	display: block;
+	margin-top: -10px;
+}
+
+.dnd_pricing-table-2 .dnd_pricebox_feature{
+	border-bottom: 1px solid #eeeeee;
+	display: block;
+	padding: 7px 40px 7px 40px;
+	text-align: center;
+}
+
+.dnd_pricing-table-2 .dnd_pricebox_feature:last-child{
+	border-bottom: 0px solid #eeeeee;
+	display: block;
+	padding: 7px 40px 7px 40px;
+	text-align: center;
+}
+
+.dnd_pricing-table-2 .dnd_pricebox_featured_text{
+	margin-bottom: 3px;
+	min-height: 30px;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	line-height: 30px;
+}
+
+.dnd_pricing-table-2.dnd_popular-plan{
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+.dnd_pricing-table-2 .dnd_popular-plan .dnd_pricebox_header{
+	position: relative;
+	top: -20px;
+	border: 1px solid #eeeeee;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	background: #fff;
+}
+
+.dnd_pricing-table-2 .dnd_popular-plan .dnd_pricebox_featured_text{
+	background: #434342;
+}
+
+.dnd_pricing-table-2 .dnd_popular-plan .dnd_pricebox_name{
+	margin-bottom: 19px;
+	padding-bottom: 17px;
+	padding-top: 10px;
+}
+
+.dnd_pricing-table-2 .dnd_popular-plan .dnd_pricebox_info:after{
+	background-color:#556;
+	background-image: linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+	linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+	linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+	linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+	linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a), 
+	linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
+	background-size:80px 140px;
+	background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+	content:'';
+	top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1; 
+    opacity: 0.2;
+}
+
+.dnd_pricing-table-2 .dnd_popular-plan .dnd_pricebox_info{
+	padding-bottom: 15px;
+	box-shadow: 0 0 0 1px transparent inset;
+}
+
+.dnd_pricing-table-2 .dnd_popular-plan .dnd_pricebox_feature{
+	top: -21px;
+	position: relative;
+}
+
+.dnd_pricing-table-2 .dnd_popular-plan .dnd-button{
+	margin: 20px 0;
+}
+
+.dnd_pricing-table-2.dnd_pricing-table-light .dnd_pricebox_info{
+	background: #f5f6f8;
+	color: #3b4550;
+}
+
+.dnd_pricing-table-2.dnd_pricing-table-dark .dnd_pricebox_info{
+	background: #3b4500;
+	color: #fff;
+}
+
+.dnd_pricing-table-2.dnd_pricing-table-yellow .dnd_pricebox_info{
+	background: #f3ae36;
+	color: #fff;
+}
+
+.dnd_pricing-table-2.dnd_pricing-table-green .dnd_pricebox_info{
+	background: #5bd4b6;
+	color: #fff;
+}
+
+.dnd_pricing-table-2.dnd_pricing-table-red .dnd_pricebox_info{
+	background: #f05347;
+	color: #fff;
+}
+
+.dnd_pricing-table-2.dnd_pricing-table-blue .dnd_pricebox_info{
+	background: #50a2de;
+	color: #fff;
+}
+
+.dnd_pricing-table-2.dnd_pricing-table-gray .dnd_pricebox_info{
+	background: #848994;
+	color: #fff;
+}
+
+.dnd_pricing-table-2.dnd_pricing-table-cyan .dnd_pricebox_info{
+	background: #50c5de;
+	color: #fff;
+}
+
+.dnd_pricing-table-2.dnd_pricing-table-aquamarine .dnd_pricebox_info{
+	background: #5fcbcd;
+	color: #fff;
+}
+
+.dnd_pricing-table-2 .dnd_button{
+	margin-top: 40px;
+	margin-right: 0;
+}
+
+.dnd_pricing-table-3{
+	box-shadow: 0 0 0 1px #eeeeee inset;
+	border-radius: 3px;
+	margin: 10px 0;
+}
+
+.dnd_pricing-table-3 .dnd_pricebox_header{
+	text-align: center;
+	padding: 27px 0 0px 0;
+	margin-bottom: 0px;
+}
+
+.dnd_pricing-table-3 .dnd_pricebox_name{
+	font-size: 18px;
+	font-family: Lato;
+	font-weight: 700;
+	text-transform: uppercase;
+	display: block;
+	padding-bottom: 27px;;
+}
+
+.dnd_pricing-table-3 .dnd_pricebox_info{
+	padding-top: 14px;
+	background: #f5f6f8;
+	padding-bottom: 15px;
+	position: relative;
+	color: #3b4550;
+	box-shadow: 0 0 0 1px #eeeeee inset;
+}
+
+.dnd_pricing-table-3 .dnd_pricebox_currency{
+	font-size: 40px;
+	font-family: Lato;
+	margin-right: 5px;
+	font-family: Lato;
+	font-weight: 700;
+}
+
+.dnd_pricing-table-3 .dnd_pricebox_price{
+	font-size: 40px;
+	line-height: 60px;
+	font-family: Lato;
+	display: inline-block;
+	font-family: Lato;
+	font-weight: 700;
+}
+
+.dnd_pricing-table-3 .dnd_pricebox_monthly{
+	font-size: 13px;
+	display: block;
+	margin-top: -10px;
+}
+
+.dnd_pricing-table-3 .dnd_pricebox_feature{
+	border-bottom: 1px solid #eeeeee;
+	display: block;
+	padding: 7px 40px 7px 40px;
+	text-align: center;
+}
+
+.dnd_pricing-table-3 .dnd_pricebox_feature:last-child{
+	border-bottom: 0px;
+}
+
+.dnd_pricing-table-3 .dnd_pricebox_featured_text{
+	margin-bottom: 3px;
+	min-height: 30px;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	line-height: 30px;
+}
+
+.dnd_pricing-table-3 .dnd_pricebox_decsription{
+	display: block;
+	font-style: italic;
+}
+
+.dnd_pricing-table-3 .dnd_popular-plan .dnd_pricebox_featured_text{
+	background: #434342;
+}
+
+.dnd_pricing-table-3 .dnd_popular-plan .dnd_pricebox_info:after{
+	background-color:#556;
+	background-image: linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+	linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+	linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+	linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+	linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a), 
+	linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
+	background-size:80px 140px;
+	background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+	content:'';
+	top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1; 
+    opacity: 0.2;
+}
+
+.dnd_pricing-table-3.dnd_pricing-table-light .dnd_pricebox_header{
+	background: #f5f6f8;
+	color: #3b4550;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.dnd_pricing-table-3.dnd_pricing-table-dark .dnd_pricebox_header{
+	background: #3b4500;
+	color: #fff;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.dnd_pricing-table-3.dnd_pricing-table-yellow .dnd_pricebox_header{
+	background: #f3ae36;
+	color: #fff;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.dnd_pricing-table-3.dnd_pricing-table-green .dnd_pricebox_header{
+	background: #5bd4b6;
+	color: #fff;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.dnd_pricing-table-3.dnd_pricing-table-red .dnd_pricebox_header{
+	background: #f05347;
+	color: #fff;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.dnd_pricing-table-3.dnd_pricing-table-blue .dnd_pricebox_header{
+	background: #50a2de;
+	color: #fff;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.dnd_pricing-table-3.dnd_pricing-table-gray .dnd_pricebox_header{
+	background: #848994;
+	color: #fff;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.dnd_pricing-table-3.dnd_pricing-table-cyan .dnd_pricebox_header{
+	background: #50c5de;
+	color: #fff;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.dnd_pricing-table-3.dnd_pricing-table-aquamarine .dnd_pricebox_header{
+	background: #5fcbcd;
+	color: #fff;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.dnd_pricing-table-4{
+	border: 1px solid #eeeeee;
+	border-radius: 3px;
+	margin: 10px 0;
+}
+
+.dnd_pricing-table-4 .dnd_pricebox_header{
+	text-align: center;
+	padding: 27px 0 0px 0;
+	margin-bottom: 0px;
+	border-bottom: 1px solid #eeeeee;
+}
+
+.dnd_pricing-table-4 .dnd_pricebox_name{
+	font-size: 18px;
+	font-family: Lato;
+	font-weight: 700;
+	text-transform: uppercase;
+	display: block;
+	padding-bottom: 27px;
+	color: #3b4550;
+	border-bottom: 1px solid #eeeeee;
+}
+
+.dnd_pricing-table-4 .dnd_pricebox_info{
+	padding-top: 14px;
+	background: #f5f6f8;
+	padding-bottom: 15px;
+	position: relative;
+}
+
+.dnd_pricing-table-4 .dnd_pricebox_currency{
+	font-size: 40px;
+	font-family: Lato;
+	margin-right: 5px;
+	font-family: Lato;
+	font-weight: 700;
+}
+
+.dnd_pricing-table-4 .dnd_pricebox_price{
+	font-size: 40px;
+	line-height: 60px;
+	font-family: Lato;
+	display: inline-block;
+	font-family: Lato;
+	font-weight: 700;
+}
+
+.dnd_pricing-table-4 .dnd_pricebox_monthly{
+	font-size: 13px;
+	display: block;
+	margin-top: -10px;
+}
+
+.dnd_pricing-table-4 .dnd_pricebox_feature{
+	border-bottom: 1px solid #eeeeee;
+	display: block;
+	padding: 7px 40px 7px 40px;
+	text-align: center;
+}
+
+.dnd_pricing-table-4 .dnd_pricebox_feature:nth-child(2n+1) {
+	background: #f5f6f8;
+}
+
+
+.dnd_pricing-table-4 .dnd_pricebox_feature:last-child{
+	border-bottom: 0px;
+}
+
+.dnd_pricing-table-4 .dnd_pricebox_featured_text{
+	margin-bottom: 3px;
+	min-height: 30px;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	line-height: 30px;
+}
+
+.dnd_pricing-table-4 .dnd_pricebox_decsription{
+	display: block;
+	font-style: italic;
+}
+
+.dnd_pricing-table-4 .dnd_popular-plan .dnd_pricebox_featured_text{
+	background: #434342;
+}
+
+.dnd_pricing-table-4 .dnd_popular-plan .dnd_pricebox_info:after{
+	background-color:#556;
+	background-image: linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+	linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+	linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+	linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+	linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a), 
+	linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
+	background-size:80px 140px;
+	background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+	content:'';
+	top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1; 
+    opacity: 0.2;
+}
+
+.dnd_pricing-table-4.dnd_pricing-table-light .dnd_pricebox_info{
+	background: #f5f6f8;
+	color: #3b4550;
+}
+
+.dnd_pricing-table-4.dnd_pricing-table-dark .dnd_pricebox_info{
+	background: #3b4500;
+	color: #fff;
+}
+
+.dnd_pricing-table-4.dnd_pricing-table-yellow .dnd_pricebox_info{
+	background: #f3ae36;
+	color: #fff;
+}
+
+.dnd_pricing-table-4.dnd_pricing-table-green .dnd_pricebox_info{
+	background: #5bd4b6;
+	color: #fff;
+}
+
+.dnd_pricing-table-4.dnd_pricing-table-red .dnd_pricebox_info{
+	background: #f05347;
+	color: #fff;
+}
+
+.dnd_pricing-table-4.dnd_pricing-table-blue .dnd_pricebox_info{
+	background: #50a2de;
+	color: #fff;
+}
+
+.dnd_pricing-table-4.dnd_pricing-table-gray .dnd_pricebox_info{
+	background: #848994;
+	color: #fff;
+}
+
+.dnd_pricing-table-4.dnd_pricing-table-cyan .dnd_pricebox_info{
+	background: #50c5de;
+	color: #fff;
+}
+
+.dnd_pricing-table-4.dnd_pricing-table-aquamarine .dnd_pricebox_info{
+	background: #5fcbcd;
+	color: #fff;
+}
+
+.dnd_pricing-table-5{
+	border: 1px solid #eeeeee;
+	border-radius: 3px;
+	margin: 10px 0;
+}
+
+.dnd_pricing-table-5 .dnd_pricebox_header{
+	text-align: center;
+	padding: 27px 0 0px 0;
+	margin-bottom: 0px;
+	border-bottom: 1px solid #eeeeee;
+	position: relative;
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+}
+
+.dnd_pricing-table-5 .dnd_pricebox_name{
+	font-size: 18px;
+	font-family: Lato;
+	font-weight: 700;
+	text-transform: uppercase;
+	display: block;
+	padding-bottom: 0px;
+	padding-top: 6px;
+	color: #3b4550;
+}
+
+.dnd_pricing-table-5 .dnd_pricebox_info{
+	padding-top: 11px;
+	padding-bottom: 25px;
+	position: relative;
+}
+
+.dnd_pricing-table-5 .dnd_pricebox_currency{
+	font-size: 60px;
+	font-family: Lato;
+	margin-right: 5px;
+	font-family: Lato;
+	font-weight: 700;
+}
+
+.dnd_pricing-table-5 .dnd_pricebox_price{
+	font-size: 60px;
+	line-height: 60px;
+	font-family: Lato;
+	display: inline-block;
+	font-family: Lato;
+	font-weight: 700;
+}
+
+.dnd_pricing-table-5 .dnd_pricebox_monthly{
+	font-size: 13px;
+	display: block;
+	margin-top: 2px;
+}
+
+.dnd_pricing-table-5 .dnd_pricebox_feature{
+	border-bottom: 1px solid #eeeeee;
+	display: block;
+	padding: 7px 40px 7px 40px;
+	text-align: center;
+}
+
+.dnd_pricing-table-5 .dnd_pricebox_feature:last-child{
+	border-bottom: 0px;
+}
+
+.dnd_pricing-table-5 .dnd_pricebox_featured_text{
+	margin-bottom: 3px;
+	min-height: 30px;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	line-height: 30px;
+}
+
+.dnd_pricing-table-5 .dnd_pricebox_decsription{
+	display: block;
+	font-style: italic;
+}
+
+.dnd_pricing-table-5 .dnd_popular-plan .dnd_pricebox_name{
+	color: #fff;
+}
+
+.dnd_pricing-table-5 .dnd_popular-plan .dnd_pricebox_featured_text{
+	background: #434342;
+}
+
+.dnd_pricing-table-5 .dnd_popular-plan .dnd_pricebox_header:after{
+	background-color:#556;
+	background-image: linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+	linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+	linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+	linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+	linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a), 
+	linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
+	background-size:80px 140px;
+	background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+	content:'';
+	top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1; 
+    opacity: 0.2;
+}
+
+.dnd_pricing-table-5.dnd_pricing-table-light .dnd_pricebox_header{
+	color: #3b4550;
+	background: #f5f6f8;
+}
+
+.dnd_pricing-table-5.dnd_pricing-table-dark .dnd_pricebox_header{
+	background: #3b4500;
+	color: #fff;
+}
+
+.dnd_pricing-table-5.dnd_pricing-table-yellow .dnd_pricebox_header{
+	background: #f3ae36;
+	color: #fff;
+}
+
+.dnd_pricing-table-5.dnd_pricing-table-green .dnd_pricebox_header{
+	background: #5bd4b6;
+	color: #fff;
+}
+
+.dnd_pricing-table-5.dnd_pricing-table-red .dnd_pricebox_header{
+	background: #f05347;
+	color: #fff;
+}
+
+.dnd_pricing-table-5.dnd_pricing-table-blue .dnd_pricebox_header{
+	background: #50a2de;
+	color: #fff;
+}
+
+.dnd_pricing-table-5.dnd_pricing-table-gray .dnd_pricebox_header{
+	background: #848994;
+	color: #fff;
+}
+
+.dnd_pricing-table-5.dnd_pricing-table-cyan .dnd_pricebox_header{
+	background: #50c5de;
+	color: #fff;
+}
+
+.dnd_pricing-table-5.dnd_pricing-table-aquamarine .dnd_pricebox_header{
+	background: #5fcbcd;
+	color: #fff;
+}
+
+.section_no_column_margin .dnd_pricing-table-1{
+	border-radius: 0px;
+}
+
+.section_no_column_margin .dnd_pricing-table-2{
+	border-radius: 0px;
+}
+
+.section_no_column_margin .dnd_pricing-table-2.dnd_popular-plan{
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+.section_no_column_margin .dnd_pricing-table-3{
+	border-radius: 0px;
+}
+
+.section_no_column_margin .dnd_pricing-table-3.dnd_pricing-table-light .dnd_pricebox_header,
+.section_no_column_margin .dnd_pricing-table-3.dnd_pricing-table-dark .dnd_pricebox_header,
+.section_no_column_margin .dnd_pricing-table-3.dnd_pricing-table-yellow .dnd_pricebox_header,
+.section_no_column_margin .dnd_pricing-table-3.dnd_pricing-table-green .dnd_pricebox_header,
+.section_no_column_margin .dnd_pricing-table-3.dnd_pricing-table-red .dnd_pricebox_header,
+.section_no_column_margin .dnd_pricing-table-3.dnd_pricing-table-blue .dnd_pricebox_header,
+.section_no_column_margin .dnd_pricing-table-3.dnd_pricing-table-gray .dnd_pricebox_header,
+.section_no_column_margin .dnd_pricing-table-3.dnd_pricing-table-cyan .dnd_pricebox_header,
+.section_no_column_margin .dnd_pricing-table-3.dnd_pricing-table-aquamarine .dnd_pricebox_header{
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+.section_no_column_margin .pricebox_first.dnd_pricing-table-3 .dnd_pricebox_header{
+	border-top-left-radius: 3px!important;
+	border-bottom-left-radius: 3px!important;
+}
+
+.section_no_column_margin .pricebox_last.dnd_pricing-table-3 .dnd_pricebox_header{
+	border-top-right-radius: 3px!important;
+	border-bottom-right-radius: 3px!important;
+}
+
+.section_no_column_margin .dnd_pricing-table-4{
+	border-radius: 0px;
+}
+
+.section_no_column_margin .dnd_pricing-table-5{
+	border-radius: 0px;
+}
+
+.section_no_column_margin .dnd_pricing-table-5 .dnd_pricebox_header{
+	border-radius: 0px;
+}
+
+.section_no_column_margin .pricebox_first{
+	border-top-left-radius: 3px!important;
+	border-bottom-left-radius: 3px!important;
+}
+
+.section_no_column_margin .pricebox_last{
+	border-top-right-radius: 3px!important;
+	border-bottom-right-radius: 3px!important;
+}
+
+.dnd_pricebox_feature .ABdev_icon-ok{
+	color:#01f001;
+}
+
+.dnd_pricebox_feature .ABdev_icon-remove{
+	color:red;
+}
+
+
+/********** Shortcode: Progress bar *************************************************************/
+.dnd_progress_bar{
+	position: relative;
+}
+
+.dnd_progress_bar_default .dnd_meter {
+	margin-bottom: 24px;
+	background: #fff;
+	height: 12px;
+	position: relative;
+	padding-top: 4px;
+}
+
+.white_bar_background .dnd_progress_bar_default .dnd_meter{
+	background: #fff;
+}
+
+
+.dnd_progress_bar_default .dnd_meter_label{
+	margin-bottom: 11px;
+	display: inline-block;
+	line-height: 24px;
+	color: #666666;
+	font-family: Lato;
+	font-weight: 400;
+	font-size: 15px;
+	text-transform: uppercase;
+}
+
+.dnd_progress_bar_default .dnd_meter .dnd_meter_percentage {
+	display: block;
+	height: 4px;
+}
+
+.dnd_progress_bar_default .dnd_meter .dnd_meter_percentage span{
+	line-height: 19px;
+	position: absolute;
+	display: block;
+	width: 42px;
+	text-align: right;
+	top: -25px;
+	right: 0;
+	color: #e4664d;
+	font-family: Lato;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.dnd_progress_bar_thick .dnd_meter {
+	margin-bottom: 20px;
+	background: #f5f6f8;
+	height: 28px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	position: relative;
+	-moz-box-shadow:    inset 0 0 6px  #eeeeee;
+   -webkit-box-shadow: inset 0 0 6px  #eeeeee;
+   box-shadow:         inset 0 0 6px  #eeeeee;
+}
+
+.dnd_progress_bar_thick .dnd_meter_label{
+	margin-bottom: 0px;
+	position: absolute;
+	top: 6px;
+	left: 10px;
+	z-index: 100;
+	line-height: 16px;
+	color: #fff;
+	font-family: Lato;
+	font-weight: 700;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.dnd_progress_bar_thick .dnd_meter .dnd_meter_percentage {
+	display: block;
+	height: 28px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.dnd_progress_bar_thick .dnd_meter .dnd_meter_percentage span{
+	line-height: 14px;
+	position: absolute;
+	display: block;
+	width: 42px;
+	text-align: right;
+	top: 6px;
+	right: 10px;
+	color: #e4664d;
+	font-family: Lato;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.dnd_progress_bar_thick .dnd_meter .dnd_meter_above30 span,
+.dnd_progress_bar_thick .dnd_meter .dnd_meter_above40 span,
+.dnd_progress_bar_thick .dnd_meter .dnd_meter_above50 span,
+.dnd_progress_bar_thick .dnd_meter .dnd_meter_above60 span,
+.dnd_progress_bar_thick .dnd_meter .dnd_meter_above70 span,
+.dnd_progress_bar_thick .dnd_meter .dnd_meter_above80 span,
+.dnd_progress_bar_thick .dnd_meter .dnd_meter_above90 span{
+	display: block;
+}
+
+.dnd_progress_bar_thin{
+	margin-bottom: 34px;
+	margin-top: 1px;
+}
+
+.dnd_progress_bar_thin .dnd_meter_label{
+	margin-bottom: 11px;
+	display: inline-block;
+	line-height: 16px;
+	color: #3b4550;
+	font-family: Lato;
+	font-weight: 700;
+	font-size: 14px;
+	letter-spacing: 0.3px;
+}
+
+.dnd_progress_bar_thin .dnd_meter {
+	margin-bottom: 21px;
+	background: #fbfcfd;
+	height: 12px;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border: 1px solid #eef0f2;
+	position: relative;
+	border-radius: 4px;
+}
+
+.dnd_progress_bar_thin .dnd_meter_percentage{
+	height: 8px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	display: block;
+	border: 3px solid #fbfcfd;
+	position: relative;
+	overflow: visible !important;
+	margin-top: 1px;
+}
+
+.dnd_progress_bar_thin .dnd_meter .dnd_meter_percentage span {
+	line-height: 32px;
+	position: absolute;
+	display: none;
+	width: 42px;
+	text-align: right;
+	top: -32px;
+	right: 6px;
+	color: #e4664d;
+	font-family: Lato;
+	font-weight: 400;
+	font-size: 16px;
+	z-index: 100;
+}
+
+.dnd_progress_bar_thin .dnd_meter_percentage span{
+	display: none;
+}
+
+.dnd_progress_bar_thin .dnd_meter .dnd_meter_above30 span,
+.dnd_progress_bar_thin .dnd_meter .dnd_meter_above40 span,
+.dnd_progress_bar_thin .dnd_meter .dnd_meter_above50 span,
+.dnd_progress_bar_thin .dnd_meter .dnd_meter_above60 span,
+.dnd_progress_bar_thin .dnd_meter .dnd_meter_above70 span,
+.dnd_progress_bar_thin .dnd_meter .dnd_meter_above80 span,
+.dnd_progress_bar_thin .dnd_meter .dnd_meter_above90 span{
+	display: block;
+}
+
+/********** Shortcode: Search Field *************************************************************/
+
+.dnd_search{
+	position: relative;
+}
+
+.dnd_search input[type="text"]{
+	border: 1px solid #eeeeee;
+	background: #f5f6f8;
+	border-radius: 2px;
+}
+
+.dnd_search input{
+	outline: none;
+}
+
+.dnd_search .submit{
+	position: absolute;
+	top: 9px;
+	right: 25px;
+}
+
+.dnd_search .submit i{
+	font-size: 14px;
+	color: #c5c9d2;
+	cursor: pointer;
+	-webkit-transition: all 180ms ease-in-out;
+	transition: all 180ms ease-in-out;
+}
+
+.dnd_search .submit i:hover{
+	color: #e4664d;
+}
+
+.dnd_search input[name="s"]{
+	width: 99%;
+	margin: 1px;
+}
+
+/********** Shortcode: Service boxes *************************************************************/
+.dnd_service_box{
+	text-align: center;
+	margin-bottom: 36px;
+	padding-top: 0;
+	margin-top: 30px;
+}
+
+.dnd_service_box_round_text_aside{
+	text-align: left;
+	padding-left: 46px;
+	position: relative;
+	padding-top: 0px;
+	position: relative;
+	padding-left: 73px;
+	padding-right: 10px;
+}
+
+.dnd_service_box_round_text_aside h3{
+	font-size: 14px;
+	margin-bottom: 11px;
+	line-height: 14px;
+	-webkit-transition:all 180ms ease-in-out;
+	transition:all 180ms ease-in-out;
+}
+
+.dnd_service_box_round_text_aside a:hover h3{
+	-webkit-transition:all 180ms ease-in-out;
+	transition:all 180ms ease-in-out;
+	color: #E4664D;
+}
+
+.dnd_service_box_round_text_aside .dnd_icon_boxed{
+	width: 54px;
+	height: 54px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+}
+
+.dnd_service_box_round_text_aside .dnd_icon_boxed i{
+	font-size: 22px;
+	line-height: 52px;	
+}
+
+.dnd_service_box_round_text_aside:hover a.dnd_icon_boxed{
+	background: #e4664d !important;
+}
+
+.dnd_service_box_round_text_aside:hover a.dnd_icon_boxed i{
+	color: #fff !important;
+}
+
+.dnd_service_box_round_text_aside_middle{
+	text-align: left;
+	padding-left: 73px;
+	position: relative;
+	padding-top: 9px;
+	padding-right: 10px;
+	margin-top: 0;
+}
+
+.dnd_service_box_round_text_aside_middle h3{
+	font-size: 14px;
+	margin-bottom: 11px;
+	margin-top: 0;
+}
+
+.dnd_service_box_round_text_aside_middle p{
+	margin-top: 7px;	
+}
+
+.white_text .dnd_service_box_round_text_aside_middle h3{
+	color: #fff;
+}
+
+.dnd_service_box_round_text_aside_middle .dnd_icon_boxed{
+	width: 54px;
+	height: 54px;
+	border-radius: 3px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+}
+
+.dnd_service_box_round_text_aside_middle:hover a.dnd_icon_boxed{
+	background: #e4664d!important;
+}
+
+.dnd_service_box_round_text_aside_middle a{
+	-webkit-transition: all 180ms ease-in-out;
+	transition: all 180ms ease-in-out;
+}
+
+.dnd_service_box_round_text_aside_middle a:hover h3{
+	color: #e4664d!important;
+	-webkit-transition: all 180ms ease-in-out;
+	transition: all 180ms ease-in-out;
+}
+
+.dnd_service_box_round_text_aside_middle:hover a.dnd_icon_boxed i{
+	color: #fff !important;
+}
+
+.dnd_service_box_round_text_aside_middle .dnd_icon_boxed i{
+	font-size: 22px;
+	line-height: 56px;
+}
+
+.dnd_service_box_round_text_aside_middle.shop_service_box{
+	padding-left: 60px;
+	padding-bottom: 3px;
+	margin: 15px 0;
+}
+
+.dnd_service_box_boxed{
+	margin-bottom: 0;
+	padding: 70px 31px 32px;
+	border: 1px solid #e4664d;
+	position: relative;
+	background: #fff;
+}
+
+.dnd_service_box_boxed h3{
+	font-size: 14px;
+	margin-bottom: 11px;
+	-webkit-transition: all 180ms ease-in-out;
+	transition: all 180ms ease-in-out;
+}
+
+.dnd_service_box_boxed a:hover h3{
+	-webkit-transition: all 180ms ease-in-out;
+	transition: all 180ms ease-in-out;
+	color: #e4664d;
+}
+
+.dnd_service_box_boxed .dnd_icon_boxed{
+	width: 90px;
+	height: 90px;
+	position: absolute;
+	top: -47px;
+	left: 50%;
+	margin-left: -45px;
+	border-top: 0;
+	border-bottom: 0;
+	border-left: 1px solid #e4664d;
+	border-right: 1px solid #e4664d;
+}
+
+.dnd_service_box_boxed .dnd_icon_boxed i{
+	font-size: 30px;
+	line-height: 86px;
+}
+
+.dnd_service_box_boxed:hover a.dnd_icon_boxed{
+	background: #e4664d!important;
+	-webkit-transition:all 180ms ease-in;
+	transition:all 180ms ease-in;
+}
+
+.dnd_service_box_boxed:hover a.dnd_icon_boxed i{
+	color: #fff !important;
+		-webkit-transition:all 180ms ease-in;
+	transition:all 180ms ease-in;
+}
+
+.dnd_service_box_boxed p{
+	margin-bottom: 0;
+}
+
+.dnd_service_box_unboxed_round{
+	padding: 40px 17px 30px;
+	position: relative;
+	margin-bottom: 0;
+	border-bottom: 1px solid #eeeeee;
+	cursor: pointer;
+	transition: all 180ms ease-in-out;
+		-webkit-transition: all 180ms ease-in-out;
+}
+
+.dnd_service_box_unboxed_round:hover{
+	border-bottom: 1px solid #e4664d;
+	transition: all 180ms ease-in-out;
+		-webkit-transition: all 180ms ease-in-out;
+}
+
+.dnd_service_box_unboxed_round:hover a.dnd_icon_boxed{
+	background: #e4664d !important;
+	border: transparent; !important;
+	transition: all 180ms ease-in-out;
+		-webkit-transition: all 180ms ease-in-out;
+}
+
+.dnd_service_box_unboxed_round:hover a.dnd_icon_boxed i{
+	color: #fff!important;
+}
+
+.dnd_service_box_unboxed_round h3{
+	font-size: 14px;
+	margin-bottom: 11px;
+}
+
+.dnd_service_box_unboxed_round a:hover h3{
+	color: #e4664d;
+}
+
+.dnd_service_box_unboxed_round .dnd_icon_boxed{
+	width: 76px;
+	height: 76px;
+	border-radius: 50%;
+	margin: 0 auto 13px;
+	display: block;
+	transition: all 180ms ease-in-out;
+	-webkit-transition: all 180ms ease-in-out;
+}
+
+.dnd_service_box_unboxed_round .dnd_icon_boxed i{
+	font-size: 30px;
+	line-height: 72px;
+}
+
+.dnd_service_box_unboxed_round p{
+	margin-bottom: 0;
+}
+
+.dnd_service_box_unboxed_square{
+	padding: 40px 17px 30px;
+	position: relative;
+	margin-bottom: 0;
+	border-bottom: 1px solid #eeeeee;
+	cursor: pointer;
+	transition: all 180ms ease-in-out;
+	-webkit-transition: all 180ms ease-in-out;
+}
+
+.dnd_service_box_unboxed_square h3{
+	font-size: 15px;
+	margin-bottom: 11px;
+	font-weight: 700;
+	color: #666;
+	transition: all 180ms ease-in-out;
+	-webkit-transition: all 180ms ease-in-out;
+}
+
+.dnd_service_box_unboxed_square a h3:hover{
+	color: #e4664d;
+}
+
+.dnd_service_box_unboxed_square .dnd_icon_boxed{
+	width: 70px;
+	height: 70px;
+	border-radius: 5px;
+	margin: 0 auto 14px;
+	display: block;
+	transition: all 180ms ease-in-out;
+	-webkit-transition: all 180ms ease-in-out;
+}
+
+.dnd_service_box_unboxed_square:hover{
+	border-bottom: 1px solid #e4664d;
+	transition: all 180ms ease-in-out;
+	-webkit-transition: all 180ms ease-in-out;
+}
+
+.dnd_service_box_unboxed_square:hover a.dnd_icon_boxed{
+	background: #e4664d !important;
+	transition: all 180ms ease-in-out;
+	-webkit-transition: all 180ms ease-in-out;
+}
+
+.dnd_service_box_unboxed_square:hover a.dnd_icon_boxed i{
+	color: #fff !important;
+}
+
+.dnd_service_box_unboxed_square .dnd_icon_boxed i{
+	font-size: 32px;
+	line-height: 70px;
+}
+
+.dnd_service_box_unboxed_square p{
+	margin-bottom: 0;
+}
+
+.dnd_service_box.dnd_service_box_round_text_aside.right_icons{
+	padding: 0px 73px 0px 10px;
+	position: relative;
+}
+
+.dnd_service_box.dnd_service_box_round_text_aside.right_icons p{
+	text-align: right;
+}
+
+.dnd_service_box.dnd_service_box_round_text_aside.right_icons .dnd_service_box_header{
+	text-align: right;
+}
+
+.dnd_service_box.dnd_service_box_round_text_aside.right_icons .dnd_icon_boxed{
+width: 54px;
+height: 54px;
+border-radius: 0;
+position: absolute;
+top: 0;
+left: auto;
+right: 0;
+text-align: center;
+}
+
+.dnd_service_box.dnd_service_box_round_text_aside.right_icons .dnd_icon_boxed i{
+	
+}
+
+/*.service_line .dnd_section_content .dnd_container:before{
+	content: " ";
+	height: 4px;
+	position: absolute;
+	top: 76px;
+	width: 50%;
+	left: 24.7%;
+	background: -webkit-linear-gradient(to right, #50a2de 0%, #50a2de 50%, #cfd3dc 50%, #cfd3dc 100%);
+    background: -o-linear-gradient(to right, #50a2de 0%, #50a2de 50%, #cfd3dc 50%, #cfd3dc 100%);
+    background: -moz-linear-gradient(to right, #50a2de 0%, #50a2de 50%, #cfd3dc 50%, #cfd3dc 100%);
+    background: linear-gradient(to right, #50a2de 0%, #50a2de 50%, #cfd3dc 50%, #cfd3dc 100%);
+}*/
+
+.dnd_column_dd_span2.service_box_process_full,
+.dnd_column_dd_span2.service_box_process_empty{
+	position: relative;
+}
+
+.service_box_process_empty:after{
+	content: " ";
+	height: 4px;
+	position: absolute;
+	top: 106px;
+	width: 100%;
+	left: 0;
+    background: #cfd3dc;
+    z-index: -1;
+}
+
+.service_box_process_full:after{
+	content: " ";
+	height: 4px;
+	position: absolute;
+	top: 106px;
+	width: 100%;
+	left: 0;
+    background: #E4664D;
+    z-index: -1;
+}
+
+.service_box_process_full:first-child:after{
+	content: " ";
+	height: 4px;
+	position: absolute;
+	top: 106px;
+	width: 50%;
+	left: auto;
+	right: 0;
+    background: #E4664D;
+    z-index: -1;
+}
+
+.service_box_process_empty:last-child:after{
+	content: " ";
+	height: 4px;
+	position: absolute;
+	top: 106px;
+	width: 50%;
+	left: 0;
+    background: #cfd3dc;
+    z-index: -1;
+}
+
+.dnd_service_box_boxed_inside{
+	transition: all 300ms ease-in-out;
+	-webkit-transition: all 300ms ease-in-out;
+	position: relative;
+	margin: 0 25px 40px 25px;
+	cursor: pointer;
+}
+
+.dnd_service_box_boxed_inside .dnd_service_box_header{
+	text-align: center;
+	padding: 30px 20px 20px;
+	border-radius: 5px;
+	position: relative;
+}
+
+.dnd_service_box_boxed_inside .dnd_service_box_header:before{
+	content: "";
+	border-top: 1px solid #bbbbbb;
+	border-right: 1px solid #bbbbbb;
+	transform:rotate(45deg);
+	-ms-transform:rotate(45deg);
+	-webkit-transform:rotate(45deg);
+	position: absolute;
+	right: -44px;
+	top: 50%;
+	width: 17px;
+	height: 17px;
+	margin-top: -8px;
+}
+
+.dnd_service_box_boxed_inside.last .dnd_service_box_header:before{
+	display: none;
+}
+
+.dnd_service_box_boxed_inside:hover .dnd_service_box_header{
+	background: #e4664d!important;
+	transition: all 300ms ease-in-out;
+	-webkit-transition: all 300ms ease-in-out;
+}
+
+.dnd_service_box_boxed_inside:hover p,
+.dnd_service_box_boxed_inside:hover h3,
+.dnd_service_box_boxed_inside:hover .dnd_icon_boxed i{
+	color: #fff!important;
+}
+
+.dnd_service_box_boxed_inside p{
+	position: relative;
+	margin-top: 20px;
+	left: -13px;
+	background: #222;
+	margin-bottom: 0px;
+	color: #fff;
+	border-radius: 5px;
+	width: 250px;
+	padding: 15px;
+	opacity: 0;
+	transition:opacity 300ms ease-in-out;
+}
+
+.dnd_service_box_boxed_inside:hover p{
+	opacity: 1;
+	transition:opacity 300ms ease-in-out;
+}
+
+.dnd_service_box_boxed_inside p:after{
+	content: "";
+	border-top: 1px solid #222;
+	border-right: 1px solid #222;
+	background: #222;
+	transform:rotate(-45deg);
+	-ms-transform:rotate(-45deg);
+	-webkit-transform:rotate(-45deg);
+	position: absolute;
+	left: 50%;
+	top: -7px;
+	margin-left: -8px;
+	width: 17px;
+	height: 17px;
+}
+
+.dnd_service_box_boxed_inside.white_text p,
+.dnd_service_box_boxed_inside.white_text h3{
+	color: #fff;
+}
+
+.dnd_service_box_boxed_inside .dnd_icon_boxed{
+	margin-bottom: 10px;
+	margin-top: 11px;
+}
+
+.dnd_service_box_boxed_inside i{
+	font-size: 60px;
+}
+
+.dnd_service_box_boxed_inside h3{
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+	color: #666;
+}
+
+
+/********** Shortcode: Metro Boxes *************************************************************/
+
+.dnd_metro_box{
+	text-align: center;
+	padding-top: 0;
+	margin: 10px 0;
+	transition: all 180ms ease-in-out;
+	-webkit-transition: all 180ms ease-in-out;
+}
+
+.dnd_metro_box h3{
+	font-size: 20px;
+	margin-bottom: 0;
+	padding-top: 61px;
+	color: #fff;
+}
+
+.dnd_metro_box p{
+	padding-top: 3px;
+	color: #fff;
+	padding: 0 50px 37px;
+	margin-bottom: 0px;
+}
+
+.dnd_metro_box .dnd_icon_boxed{
+	width: 70px;
+	height: 70px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	background: transparent;
+	text-decoration: none;
+	border: 2px solid #fff;
+	position: relative;
+	top: 44px;
+	display: inline-block;
+}
+
+.dnd_metro_box .dnd_icon_boxed i{
+	color: #fff;
+	font-size: 24px;
+	line-height: 65px;
+}
+
+.dnd_metro_box:hover{
+	background: #333!important;
+	transition: all 180ms ease-in-out;
+	-webkit-transition: all 180ms ease-in-out;
+}
+
+.dnd_metro_box.boxed{
+	height: 301px;
+	box-shadow: 0 0 0 1px #eef0f2 inset;
+	position: relative;
+}
+
+.dnd_metro_box.boxed .dnd_metro_box_header{
+	position: absolute;
+	top: 40px;
+	left: 50%;
+	margin-left: -70px;
+}
+
+.dnd_metro_box.boxed .dnd_metro_box_header .dnd_icon_boxed{
+	border: 0px;
+}
+
+.dnd_metro_box.boxed .dnd_metro_box_header .dnd_icon_boxed i{
+	color: #285fdb;
+	font-size: 40px;
+}
+
+.dnd_metro_box.boxed:hover .dnd_metro_box_header .dnd_icon_boxed i{
+	color: #fff;
+}
+
+.dnd_metro_box.boxed:hover .dnd_metro_box_header h3{
+	color: #fff;
+}
+
+.dnd_metro_box.boxed .dnd_metro_box_header h3{
+	color: #3c414c;
+}
+
+
+/********** Shortcode: Divider *************************************************************/
+.dnd_divider{
+	clear:both;
+	text-align: right;
+	line-height: 20px;
+	border-top: 1px solid #eeeeee;
+	margin: 10px;
+}
+
+.dnd_divider a{
+	text-decoration: none;
+	display: inline-block;
+}
+
+.dnd_divider a:hover{
+	text-decoration: none;
+}
+
+.dnd_divider i{
+	position: relative;
+	top: 2px;
+}
+
+.dnd_divider_dashed{
+	border-top: 1px dashed #eeeeee;
+}
+
+.dnd_divider_dotted{
+	border-top: 1px dotted #eeeeee;
+}
+
+
+/********** Shortcode: Pullquote *************************************************************/
+.dnd_pullquote{
+	padding: 20px 20px 20px 15px;
+	margin: 15px 15px 15px 0;
+	float: left;
+	background: #f5f5f5;
+	border-radius: 0px;
+	border-left: 4px solid #e4664d;
+	font-family: Lato;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 17px;
+	line-height: 26px;
+	color: #666;
+}
+
+.dnd_pullquote_right{
+	padding: 20px 15px 20px 20px;
+	float: right;
+	background: #f5f5f5;
+	border-radius: 0px;
+	border-right: 4px solid #e4664d;
+}
+
+
+/********** Shortcode: Tooltip *************************************************************/
+.dnd_tooltip{
+	cursor: pointer;
+}
+
+
+/********** Shortcode: Source Code *************************************************************/
+.dnd_prettyprint{
+	padding: 24px !important;
+}
+
+.dnd_prettyprint ol{
+	margin: 0 !important;
+	padding: 0 !important;
+	list-style: decimal outside !important;
+}
+
+.dnd_prettyprint li{
+	margin-left: 20px !important;
+	list-style: decimal outside !important;
+}
+
+
+/********** Shortcode: RSS Feed *************************************************************/
+.dnd_rss,
+.dnd_rss li{
+	list-style: none !important;
+	margin-left: 0 !important;
+}
+
+
+/********** Shortcode: Children *************************************************************/
+.dnd_children,
+.dnd_children li{
+	list-style: none !important;
+	margin-left: 0 !important;
+}
+
+
+/********** Shortcode: Sitemap *************************************************************/
+.dnd_sitemap,
+.dnd_sitemap li{
+	list-style: none !important;
+}
+
+.dnd_sitemap{
+	margin-bottom: 30px;
+}
+
+
+/********** Shortcode: Google Map *************************************************************/
+.dnd_google_map img{
+	max-width: none !important;
+	border: none !important;
+	border-radius: 0px !important;
+	box-shadow: none !important;
+}
+
+
+/********** Shortcode: Dropcap *************************************************************/
+.dnd_dropcap{
+	display: block;
+	width: 32px;
+	height: 32px;
+	float: left;
+	margin-right: 3px;
+}
+
+/** Style 1 **/
+
+.dnd_dropcap_style1{
+	font-size: 45px;
+	line-height: 22px;
+	color: #3b4550;
+	margin-top: 11px;
+	margin-left: -3px;
+}
+
+/** Style 2 **/
+
+.dnd_dropcap_style2{
+	font-size: 24px;
+	text-align: center;
+	line-height: 32px;
+	background: #E4664D;
+	border-radius: 5px;
+	color: #fff;
+	margin-top: 7px;
+	margin-right: 10px;
+}
+
+
+
+/********** Shortcode: Videos *************************************************************/
+.dnd-videoWrapper-youtube{
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:0px;
+	height:0;
+	overflow:hidden;
+}
+
+.dnd-videoWrapper-youtube iframe,
+.dnd-videoWrapper-youtube object,
+.dnd-videoWrapper-youtube embed{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+.dnd-videoWrapper-vimeo{
+	position:relative;
+	padding-bottom:53%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.dnd-videoWrapper-vimeo iframe,
+.dnd-videoWrapper-vimeo object,
+.dnd-videoWrapper-vimeo embed{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+
+/********** Shortcode: Clear *************************************************************/
+	.dnd_clear{
+		clear:both;
+	}
+
+
+/********** Shortcode: Callout Boxes *************************************************************/
+	.dnd-callout_box{
+		margin-bottom: 30px;
+		padding: 50px 0 96px 0;
+	}
+
+	.dnd-callout_box_title{
+		font-size: 32px;
+		font-family: Lato;
+		font-weight: 300;
+		margin-bottom: 13px;
+		color: #505558;
+		display: block;
+	}
+
+	.dnd-callout_box p{
+		margin-bottom: 0;
+	}
+
+	.dnd-callout_box .dnd_column_dd_span3{
+		text-align: center;
+		padding-top: 3px;
+	}
+
+	.dnd-callout_box .dnd-button{
+		margin: 0;
+	}
+
+	.dnd-callout_box.color_white .dnd-callout_box_title,
+	.dnd-callout_box.color_white p{
+		color: #fff;
+	}
+
+	.dnd_button_1{
+		margin-left: 10px;
+	}
+
+	.dnd-button1 i, .dnd-button2 i{
+		margin: 0 5px;
+	}
+
+	/**** Style 1 ****/
+
+	.dnd-callout_box_style_1{
+		margin-bottom: 53px;
+		margin-left: 100px;
+		margin-right: 100px;
+		padding-bottom: 3px;
+		position: relative;
+	}
+
+	.dnd-callout_box_style_1 .dnd-callout_box_title{
+		font-family: Lato, sans-serif;
+		font-size: 36px;
+		line-height: 43px;
+		color: #fff;
+		display: inline-block;
+		margin-bottom: 10px;
+		margin-top: 0px;
+		font-weight: 400;
+		padding-right: 250px;
+	}
+
+	.dnd-callout_box_style_1 .dnd-button1{
+		float: right;
+		position: absolute;
+		right: 0;
+		top: 50%;
+	}
+
+	.dnd-button1:hover{
+		background: #ccc;
+	}
+	
+	.dnd-button2:hover{
+		background: #ccc;
+	}
+
+	.dnd-callout_box_style_1 p{
+		display: block;
+		font-size: 30px;
+		line-height: 36px;
+		color: #fff;
+		font-weight: 300;
+	}
+
+	/**** Style 2 ****/
+
+	.dnd-callout_box_style_2{
+		margin-bottom: 35px;
+		margin-left: 155px;
+		margin-right: 155px;
+		text-align: center;
+		margin-top: 19px;
+		padding-bottom: 45px;
+	}
+
+	.dnd-callout_box_style_2 .dnd-callout_box_title{
+		font-family: Lato, sans-serif;
+		font-size: 28px;
+		color: #3b4550;
+		margin-bottom: 0;
+		margin-top: 10px;
+		text-align: center;
+		font-weight: 400;
+		line-height: 28px;
+	}
+
+	.dnd-callout_box_style_2 p{
+		color: #848994;
+		display: inline-block;
+		padding: 15px 30px 23px;
+		text-align: center;
+	}
+
+	.dnd-callout_box_style_2 .dnd-button1{
+		display: inline-block;
+		text-align: center;
+	}
+
+	.dnd-button2{
+		margin-left: 10px;
+	}
+
+	/**** Style 3 ****/
+
+	.dnd-callout_box_style_3{
+		margin-bottom: 0px;
+		border: 1px solid #eeeeee;
+		border-radius: 5px;
+		padding-left: 130px;
+		padding-right: 130px;
+		background: #f5f6f8;
+	}
+
+	.dnd-callout_box_style_3 .dnd-callout_box_title{
+		font-family: Lato, sans-serif;
+		font-size: 22px;
+		color: #3b4550;
+		float: left;
+		margin-bottom: 0px;
+		margin-top: 10px;
+		font-weight: 400;
+	}
+
+	.dnd-callout_box_style_3 .dnd-button1{
+		float: right;
+	}
+
+	/**** Style 4 ****/
+
+	.dnd-callout_box_style_4{
+		margin-bottom: 100px;
+		padding-bottom: 86px;
+		padding-top: 10px;
+	}
+
+	.dnd-callout_box_style_4 .dnd-callout_box_title{
+		font-family: Lato, sans-serif;
+		font-size: 22px;
+		color: #3b4550;
+		float: left;
+		margin-bottom: 10px;
+		margin-top: 50px;
+		font-weight: 400;
+	}
+
+	.dnd-callout_box_style_4 p{
+		float: left;
+		width: 70%;
+	}
+
+	.dnd-callout_box_style_4 .dnd-button1{
+		float: right;
+		margin-top: -17px;
+	}
+
+	/**** Style 5 ****/
+
+	.dnd-callout_box_style_5{
+		margin-bottom: 50px;
+		padding-bottom: 87px;
+		padding-top: 13px;
+		margin-left: 130px;
+		margin-right: 130px;
+	}
+
+	.dnd-callout_box_style_5 .dnd-callout_box_title{
+		font-family: Lato, sans-serif;
+		font-size: 28px;
+		float: left;
+		line-height: 32px;
+		margin-bottom: 10px;
+		margin-top: 50px;
+	}
+
+	.white_text.dnd-callout_box_style_5 .dnd-callout_box_title{
+		color: #fff;
+	}
+
+	.dnd-callout_box_style_5 .dnd-icon-button{
+		float: right;
+		margin-top: 50px;
+		margin-left: 19px;
+	}
+	
+	.dnd-callout_box_style_5 .dnd-icon-button i{
+		font-size: 22px;
+		color: #fff;
+		transition: all 180ms ease-in-out;
+		-webkit-transition: all 180ms ease-in-out;
+	}
+
+	.dnd-callout_box_style_5 .dnd-icon-button i:hover{
+		font-size: 22px;
+		color: #e4664d;
+		transition: all 180ms ease-in-out;
+		-webkit-transition: all 180ms ease-in-out;
+	}
+
+/********** Shortcode: Image Callout Boxes ********************************************/
+
+.dnd-image-callout-box{
+	text-align: center;
+	overflow: hidden;
+	border-radius: 2px;
+	margin-bottom: 30px;
+}
+
+.dnd-image-callout-box .dnd-image-callout-box-wrapper{
+	padding: 56px;
+}
+
+.dnd-image-callout-box .dnd-image-callout-box-wrapper .dnd-image-callout-box-title{
+	font-family: Lato, sans-serif;
+	font-weight: 100;
+	font-size: 33px;
+}
+
+.dnd-image-callout-box.white_text .dnd-image-callout-box-wrapper .dnd-image-callout-box-title{
+	color: #fff;
+}
+
+.pattern_overlayed .dnd-image-callout-box-wrapper{
+	z-index: 1;
+	position: relative;
+}
+
+.dnd-image-callout-box .dnd-image-callout-box-wrapper p{
+	text-align: center;
+	font-family: Lato, sans-serif;
+	font-weight: 100;
+	font-size: 20px;
+	margin-top: 5px;
+}
+
+.dnd-image-callout-box .dnd-image-callout-box-wrapper a i{
+	margin: 0 10px;
+}
+
+.dnd-image-callout-box .dnd-image-callout-box-wrapper .button{
+	-webkit-transition:all 180ms ease-in;
+	transition:all 180ms ease-in;
+}
+
+.dnd-image-callout-box .dnd-image-callout-box-wrapper .button:hover{
+	color: #b2b2b2;
+	-webkit-transition:all 180ms ease-in;
+	transition:all 180ms ease-in;
+}
+
+.dnd-image-callout-box .dnd-image-callout-box-wrapper .button_light{
+	color: #fff;
+}
+
+.dnd-image-callout-box .dnd-image-callout-box-wrapper .button_dark{
+	color: #3b4550;
+}
+
+.dnd-image-callout-box .dnd-image-callout-box-wrapper .button_yellow{
+	color: #f3ae36;
+}
+
+.dnd-image-callout-box .dnd-image-callout-box-wrapper .button_green{
+	color: #5bd4b6;
+}
+
+.dnd-image-callout-box .dnd-image-callout-box-wrapper .button_red{
+	color: #e4664d;
+}
+
+.dnd-image-callout-box .dnd-image-callout-box-wrapper .button_blue{
+	color: #50a2de;
+}
+
+.dnd-image-callout-box .dnd-image-callout-box-wrapper .button_gray{
+	color: #848994;
+}
+
+.dnd-image-callout-box .dnd-image-callout-box-wrapper .button_cyan{
+	color: #50c5de;
+}
+
+.dnd-image-callout-box .dnd-image-callout-box-wrapper .button_aquamarine{
+	color: #5fcbcd;
+}
+
+/********** Shortcode: Buttons *************************************************************/
+.dnd-button{
+	display: inline-block;
+	white-space: nowrap;
+	font-size: 20px;
+	line-height: 20px;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-top: 21px;
+	text-decoration: none;
+	font-family: Lato;
+	font-weight: 300;
+}
+
+.dnd-button i{
+	margin-left: 10px;
+	font-size: 16px;
+	position: relative;
+	top: 2px;
+}
+
+.dnd-button_light{
+    background: #fff; 
+	border: 1px solid #ddd;
+	color: #666 !important;
+}
+
+.dnd-button_dark{
+	background: #3b4550;
+	border: 1px solid #3b4550;
+	color: #fff !important;
+}
+
+.dnd-button_yellow{
+	background: #f3ae36;
+	border: 1px solid #f3ae36;
+	color: #fff !important;
+}
+
+.dnd-button_orange{
+	background: #f39900;
+	border: 1px solid #f39900;
+	color: #fff !important;
+}
+
+.dnd-button_purple{
+	background: #865bd4;
+	border: 1px solid #865bd4;
+	color: #fff !important;
+}
+
+.dnd-button_pink{
+	background: #cd529a;
+	border: 1px solid #cd529a;
+	color: #fff !important;
+}
+
+.dnd-button_green{
+	background: #5bd4b6;
+	border: 1px solid #5bd4b6;
+	color: #fff !important;
+}
+
+.dnd-button_red{
+	background: #e4664d;
+	border: 1px solid #e4664d;
+	color: #fff !important;
+}
+
+.dnd-button_blue{
+	background: #50a2de;
+	border: 1px solid #50a2de;
+	color: #fff !important;
+}
+
+.dnd-button_gray{
+	background: #848994;
+	border: 1px solid #848994;
+	color: #fff !important;
+}
+
+.dnd-button_cyan{
+	background: #50c5de;
+	border: 1px solid #50c5de;
+	color: #fff !important;
+}
+
+.dnd-button_aquamarine{
+	background: #5fcbcd;
+	border: 1px solid #5fcbcd;
+	color: #fff !important;
+}
+
+.dnd-button:hover,
+.dnd-button_yellow:hover{
+	background: #ccc;
+	border: 1px solid transparent;
+	color: #fff !important;
+}
+
+.dnd-button_light:hover{
+	background: #ccc;
+	color: #fff !important;
+}
+
+.dnd-button_blue:hover{
+	background: #dddddd;
+	color: #fff !important;
+}
+
+.dnd-button_small{
+	padding: 4px 14px;
+	font-size: 11px;
+	font-family: Lato,sans-serif;
+	font-weight: 700;
+	letter-spacing: 0.9px;
+}
+
+.dnd-button_medium{
+	padding: 9px 20px;
+	font-size: 12px;
+	font-family: Lato,sans-serif;
+	font-weight: 700;
+	letter-spacing: 0.9px;
+}
+
+.dnd-button_large{
+	padding: 13px 22px;
+	font-size: 14px;
+	line-height: 22px;
+	font-family: Lato,sans-serif;
+	font-weight: 700;
+}
+
+.dnd-button_xlarge{
+	padding: 20px 25px;
+}
+
+.dnd-button_rounded.dnd-button_small{
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.dnd-button_rounded.dnd-button_medium{
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.dnd-button_rounded.dnd-button_large{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.dnd-button_rounded.dnd-button_xlarge{
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+
+.dnd-button_transparent.dnd-button_light{
+	background: rgba(255,255,255,0.2);
+	border: 1px solid #868787;
+	color: #dadada !important;
+}
+
+.dnd-button_transparent.dnd-button_light:hover{
+	background: #fbfcfd;
+	border: 1px solid #eef0f2;
+	color: #3c414c !important;
+	-webkit-transition:all 180ms ease-in;
+	transition:all 180ms ease-in;
+}
+
+.dnd-button_transparent.dnd-button_dark{
+	background: transparent;
+	border: 1px solid #0bb8c9;
+	color: #0bb8c9 !important;
+}
+
+.dnd-button_transparent.dnd-button_dark:hover{
+	background: #0bb8c9;
+	border: 1px solid #0bb8c9;
+	color: #fff !important;
+	-webkit-transition:all 180ms ease-in;
+	transition:all 180ms ease-in;
+}
+
+.dnd-button_transparent.dnd-button_yellow{
+	background: transparent;
+	border: 1px solid #ebb72b;
+	color: #ebb72b !important;
+}
+
+.dnd-button_transparent.dnd-button_yellow:hover{
+	background: #ebb72b;
+	border: 1px solid #ebb72b;
+	color: #fff !important;
+	-webkit-transition:all 180ms ease-in;
+	transition:all 180ms ease-in;
+}
+
+.dnd-button_transparent.dnd-button_green{
+	background: transparent;
+	border: 1px solid #b4dd44;
+	color: #b4dd44 !important;
+}
+
+.dnd-button_transparent.dnd-button_green:hover{
+	background: #b4dd44;
+	border: 1px solid #b4dd44;
+	color: #fff !important;
+	-webkit-transition:all 180ms ease-in;
+	transition:all 180ms ease-in;
+}
+
+
+.dnd-button_transparent.dnd-button_red{
+	background: transparent;
+	border: 1px solid #dd444f;
+	color: #dd444f !important;
+}
+
+.dnd-button_transparent.dnd-button_red:hover {
+	background: #dd444f;
+	border: 1px solid #dd444f;
+	color: #fff !important;
+	-webkit-transition:all 180ms ease-in;
+	transition:all 180ms ease-in;
+}
+
+
+.dnd-button_transparent.dnd-button_blue{
+	background: transparent;
+	border: 1px solid #285fdb;
+	color: #285fdb !important;
+}
+
+.dnd-button_transparent.dnd-button_blue:hover {
+	background: #285fdb;
+	border: 1px solid #285fdb;
+	color: #fff !important;
+	-webkit-transition:all 180ms ease-in;
+	transition:all 180ms ease-in;
+}
+
+.dnd-button_transparent.dnd-button_gray{
+	background: transparent;
+	border: 1px solid #57595d;
+	color: #57595d !important;
+}
+
+.dnd-button_transparent.dnd-button_gray:hover {
+	background: #8a8d94;
+	border: 1px solid #8a8d94;
+	color: #505558 !important;
+	-webkit-transition:all 180ms ease-in;
+	transition:all 180ms ease-in;
+}
+
+.dnd-button_transparent.dnd-button_cyan{
+	background: transparent;
+	border: 1px solid #28dbc4;
+	color: #28dbc4 !important;
+}
+
+.dnd-button_transparent.dnd-button_cyan:hover {
+	background: #28dbc4;
+	border: 1px solid #28dbc4;
+	color: #fff !important;
+	-webkit-transition:all 180ms ease-in;
+	transition:all 180ms ease-in;
+}
+
+
+.dnd-button_transparent.dnd-button_aquamarine{
+	background: transparent;
+	border: 1px solid #41e8a3;
+	color: #41e8a3 !important;
+}
+
+.dnd-button_transparent.dnd-button_aquamarine:hover {
+	background: #41e8a3;
+	border: 1px solid #41e8a3;
+	color: #fff !important;
+	-webkit-transition:all 180ms ease-in;
+	transition:all 180ms ease-in;
+}
+
+.dnd-button_transparent.dnd-button_purple{
+	background: transparent;
+	border: 1px solid #7e44dd;
+	color: #7e44dd !important;
+}
+
+.dnd-button_transparent.dnd-button_purple:hover{
+	background: #7e44dd;
+	border: 1px solid #7e44dd;
+	color: #fff !important;
+	-webkit-transition:all 180ms ease-in;
+	transition:all 180ms ease-in;
+}
+
+
+.dnd-button_transparent.dnd-button_orange{
+	background: transparent;
+	border: 1px solid #eb7c2b;
+	color: #eb7c2b !important;
+}
+
+.dnd-button_transparent.dnd-button_orange:hover {
+	background: #eb7c2b;
+	border: 1px solid #eb7c2b;
+	color: #fff !important;
+	-webkit-transition:all 180ms ease-in;
+	transition:all 180ms ease-in;
+}
+
+.dnd-button_transparent.dnd-button_pink {
+	background: transparent;
+	border: 1px solid #dd447e;
+	color: #dd447e !important;
+}
+
+.dnd-button_transparent.dnd-button_pink:hover {
+	background: #dd447e;
+	border: 1px solid #dd447e;
+	color: #fff !important;
+	-webkit-transition:all 180ms ease-in;
+	transition:all 180ms ease-in;
+}
+
+/********** Shortcode: Countdown *************************************************************/
+
+.dnd_countdown{
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.dnd_countdown,
+.dnd_countdown * {
+	-webkit-perspective: 1000;
+	-webkit-backface-visibility: hidden; 
+	-webkit-transform: translateZ(0);
+	-webkit-transform:translate3d(0,0,0); 
+}
+
+.dnd_countdown .dnd_countdown_inner{
+	display: inline-block;
+	text-align: center;
+	margin-bottom: 20px !important;
+}
+
+.countdown {
+	font-family: Lato;
+	font-weight: 100;
+	font-size: 42px;
+	line-height: 100px;
+	color: #fff;
+	background: #e4664d;
+	width: 141px;
+	height: 100px;
+	border-radius: 2px;
+	margin: 0 0 3px 26px;
+}
+
+.dnd_countdown_inner:first-of-type > .countdown,
+.dnd_countdown_inner:first-of-type > span{
+	margin-left: 0;
+}
+
+.dnd_countdown_inner:last-of-type > .countdown,
+.dnd_countdown_inner:last-of-type > span{
+	margin-right: 0;
+}
+
+.dnd_countdown_inner span{
+	font-family: Lato;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 50px;
+	color: #222222;
+	width: 141px;
+	height: 50px;
+	border-radius: 5px;
+	margin: 0 0 3px 26px;
+	display: inline-block;
+}
+
+/*Flip style*/
+.dnd_countdown.flip_style span{
+	font-family: Lato;
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 50px;
+	color: #3b4550;
+	margin: 0px;
+	text-transform: uppercase;
+	display: block;
+	position: absolute;
+	bottom: -51px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+
+.dnd_countdown.flip_style .time {
+	border-radius: 5px;
+	display: inline-block;
+	text-align: center;
+	position: relative;
+	height: 105px;
+	width: 75px;
+	margin: 5px 5px 40px 5px;
+	-webkit-perspective: 500px;
+	-moz-perspective: 500px;
+	-ms-perspective: 500px;
+	-o-perspective: 500px;
+	perspective: 500px;
+}
+
+.dnd_countdown.flip_style .count {
+	background: #3b4550;
+	color: #f8f8f8;
+	font-weight: 700;
+	display: block;
+	font-family: Lato, sans-serif;
+	font-size: 42px;
+	line-height: 105px;
+	overflow: hidden;
+	position: absolute;
+	text-align: center;
+	text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+	top: 0;
+	width: 100%;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-transform-style: flat;
+	-moz-transform-style: flat;
+	-ms-transform-style: flat;
+	-o-transform-style: flat;
+	transform-style: flat;
+}
+
+.dnd_countdown.flip_style .count.top {
+	border-top: 1px solid rgba(255,255,255,0.2);
+	border-bottom: 1px solid rgba(255,255,255,0.1);
+	border-radius: 5px 5px 0 0;
+	height: 50%;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+	-webkit-transform-origin: 50% 100%;
+	-moz-transform-origin: 50% 100%;
+	-ms-transform-origin: 50% 100%;
+	-o-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+}
+
+.dnd_countdown.flip_style .count.bottom {
+	background-image: linear-gradient(rgba(255,255,255,0.1), transparent);
+	background-image: -webkit-linear-gradient(rgba(255,255,255,0.1), transparent);
+	background-image: -moz-linear-gradient(rgba(255,255,255,0.1), transparent);
+	background-image: -ms-linear-gradient(rgba(255,255,255,0.1), transparent);
+	background-image: -o-linear-gradient(rgba(255,255,255,0.1), transparent);
+	border-radius: 0 0 5px 5px;
+	line-height: 0;
+	height: 50%;
+	top: 50%;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	-webkit-transform-origin: 50% 0;
+	-moz-transform-origin: 50% 0;
+	-ms-transform-origin: 50% 0;
+	-o-transform-origin: 50% 0;
+	transform-origin: 50% 0;
+}
+
+.dnd_countdown.flip_style .label {
+	font-size: normal;
+	margin-top: 5px;
+	display: block;
+	position: absolute;
+	top: 95px;
+	width: 100%;
+}
+
+/* Animation start */
+.dnd_countdown.flip_style .count.curr.top {
+	-webkit-transform: rotateX(0deg);
+	-moz-transform: rotateX(0deg);
+	-ms-transform: rotateX(0deg);
+	-o-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+	z-index: 3;
+}
+.dnd_countdown.flip_style .count.next.bottom {
+	-webkit-transform: rotateX(90deg);
+	-moz-transform: rotateX(90deg);
+	-ms-transform: rotateX(90deg);
+	-o-transform: rotateX(90deg);
+	transform: rotateX(90deg);
+	z-index: 2;
+}
+/* Animation end */
+.dnd_countdown.flip_style .flip .count.curr.top {
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-ms-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+	-webkit-transform: rotateX(-90deg);
+	-moz-transform: rotateX(-90deg);
+	-ms-transform: rotateX(-90deg);
+	-o-transform: rotateX(-90deg);
+	transform: rotateX(-90deg);
+}
+.dnd_countdown.flip_style .flip .count.next.bottom {
+	-webkit-transition: all 250ms ease-in-out 250ms;
+	-moz-transition: all 250ms ease-in-out 250ms;
+	-ms-transition: all 250ms ease-in-out 250ms;
+	-o-transition: all 250ms ease-in-out 250ms;
+	transition: all 250ms ease-in-out 250ms;
+	-webkit-transform: rotateX(0deg);
+	-moz-transform: rotateX(0deg);
+	-ms-transform: rotateX(0deg);
+	-o-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+}
+
+.hide_expired{
+	display: none !important;
+}
+
+/******* Image Carousel ********/
+
+	.caroufredsel_wrapper{
+	margin: 0 !important;
+	}
+	
+	.dnd-carousel{
+		padding: 0;
+		list-style: none;
+		display: block;
+	}
+	
+	.dnd-carousel li{
+		float: left;
+		display: block;
+		margin: 0 12px 0 0;
+		padding: 0;
+		border-radius: 0px;
+		overflow: hidden;
+		padding-bottom: 20px;
+	}
+
+	.carousel_navigation{
+		text-align: center;
+		position: relative;
+		margin: 20px auto 0;
+		display: block;
+	}
+
+	.carousel_navigation a{
+		color: #9fa4af;
+		width: 48px;
+		height: 48px;
+		border: 1px solid #eee;
+		display: inline-block;
+		text-align: center;
+		margin: 0 10px;
+		background: -webkit-linear-gradient(#fff, #f5f6f8);
+		background: -o-linear-gradient(#fff, #f5f6f8);
+		background: linear-gradient(#fff, #f5f6f8);
+	}
+
+	.carousel_navigation a:hover{
+		color: #E4664D;
+		border: 1px solid #E4664D;
+	}
+
+	.carousel_navigation a i{
+		line-height: 47px;
+	}
+
+	.carousel_prev{
+		z-index: 10;
+	}
+
+	.carousel_next{
+		z-index: 10;
+	}
+
+	.section_body_fullwidth .carousel_prev{
+		left: 0;
+	}
+
+	.section_body_fullwidth .carousel_next{
+		right: 0;
+	}
+
+/********** Tipsy *************************************************************/
+.tipsy { font-size: 10px; position: absolute; padding: 5px; z-index: 100000; }
+.tipsy-inner { background-color: #000; color: #FFF; max-width: 200px; padding: 5px 8px 4px 8px; text-align: center; }
+.tipsy-inner { border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; }
+/*.tipsy-inner { box-shadow: 0 0 5px #000000; -webkit-box-shadow: 0 0 5px #000000; -moz-box-shadow: 0 0 5px #000000; }*/
+.tipsy-arrow { position: absolute; width: 0; height: 0; line-height: 0; border: 5px dashed #000; }
+.tipsy-arrow-n { border-bottom-color: #000; }
+.tipsy-arrow-s { border-top-color: #000; }
+.tipsy-arrow-e { border-left-color: #000; }
+.tipsy-arrow-w { border-right-color: #000; }
+.tipsy-n .tipsy-arrow { top: 0px; left: 50%; margin-left: -5px; border-bottom-style: solid; border-top: none; border-left-color: transparent; border-right-color: transparent; }
+.tipsy-nw .tipsy-arrow { top: 0; left: 10px; border-bottom-style: solid; border-top: none; border-left-color: transparent; border-right-color: transparent;}
+.tipsy-ne .tipsy-arrow { top: 0; right: 10px; border-bottom-style: solid; border-top: none;  border-left-color: transparent; border-right-color: transparent;}
+.tipsy-s .tipsy-arrow { bottom: 0; left: 50%; margin-left: -5px; border-top-style: solid; border-bottom: none;  border-left-color: transparent; border-right-color: transparent; }
+.tipsy-sw .tipsy-arrow { bottom: 0; left: 10px; border-top-style: solid; border-bottom: none;  border-left-color: transparent; border-right-color: transparent; }
+.tipsy-se .tipsy-arrow { bottom: 0; right: 10px; border-top-style: solid; border-bottom: none; border-left-color: transparent; border-right-color: transparent; }
+.tipsy-e .tipsy-arrow { right: 0; top: 50%; margin-top: -5px; border-left-style: solid; border-right: none; border-top-color: transparent; border-bottom-color: transparent; }
+.tipsy-w .tipsy-arrow { left: 0; top: 50%; margin-top: -5px; border-right-style: solid; border-left: none; border-top-color: transparent; border-bottom-color: transparent; }
+

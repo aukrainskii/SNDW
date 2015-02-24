@@ -1,0 +1,1471 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: VozX v1.0.0\n"
+"POT-Creation-Date: 2014-03-13 12:46+0100\n"
+"PO-Revision-Date: 2014-03-13 12:46+0100\n"
+"Last-Translator: \n"
+"Language-Team: ab-themes <support@ab-themes.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.4\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:14
+msgid "404"
+msgstr ""
+
+#: ../404.php:15
+msgid "Oops, the Page You are Looking for can not be Found"
+msgstr ""
+
+#: ../footer.php:11 ../inc/sidebars.php:27
+msgid "First Footer Widget"
+msgstr ""
+
+#: ../footer.php:14 ../inc/sidebars.php:37
+msgid "Second Footer Widget"
+msgstr ""
+
+#: ../footer.php:17 ../inc/sidebars.php:47
+msgid "Third Footer Widget"
+msgstr ""
+
+#: ../footer.php:20 ../inc/sidebars.php:57
+msgid "Fourth Footer Widget"
+msgstr ""
+
+#: ../functions.php:80
+msgid "Header Menu"
+msgstr ""
+
+#: ../inc/ab-shortcodes-additional.php:15
+msgid "Testimonial Category"
+msgstr ""
+
+#: ../inc/ab-shortcodes-additional.php:18
+msgid "Number of Testimonials to Show"
+msgstr ""
+
+#: ../inc/ab-shortcodes-additional.php:24
+msgid "Show Navigation Arrows"
+msgstr ""
+
+#: ../inc/ab-shortcodes-additional.php:27
+msgid "Delay"
+msgstr ""
+
+#: ../inc/ab-shortcodes-additional.php:31
+msgid "Animation Duration"
+msgstr ""
+
+#: ../inc/ab-shortcodes-additional.php:35
+#: ../inc/redux/ReduxCore/inc/fields/typography/field_typography.php:190
+msgid "Style"
+msgstr ""
+
+#: ../inc/ab-shortcodes-additional.php:38
+msgid "Big without image"
+msgstr ""
+
+#: ../inc/ab-shortcodes-additional.php:39
+msgid "Small with image"
+msgstr ""
+
+#: ../inc/ab-shortcodes-additional.php:43
+msgid "Transition Effect"
+msgstr ""
+
+#: ../inc/ab-shortcodes-additional.php:46
+msgid "None"
+msgstr ""
+
+#: ../inc/ab-shortcodes-additional.php:47
+msgid "Fade"
+msgstr ""
+
+#: ../inc/ab-shortcodes-additional.php:48
+msgid "Crossfade"
+msgstr ""
+
+#: ../inc/ab-shortcodes-additional.php:49
+msgid "Cover Fade"
+msgstr ""
+
+#: ../inc/ab-shortcodes-additional.php:53
+msgid "Easing Effect"
+msgstr ""
+
+#: ../inc/ab-shortcodes-additional.php:56
+msgid "Linear"
+msgstr ""
+
+#: ../inc/ab-shortcodes-additional.php:57
+msgid "Swing"
+msgstr ""
+
+#: ../inc/ab-shortcodes-additional.php:58
+msgid "Quadratic"
+msgstr ""
+
+#: ../inc/ab-shortcodes-additional.php:59
+msgid "Cubic"
+msgstr ""
+
+#: ../inc/ab-shortcodes-additional.php:60
+msgid "Elastic"
+msgstr ""
+
+#: ../inc/ab-shortcodes-additional.php:64
+msgid "Slide Direction"
+msgstr ""
+
+#: ../inc/ab-shortcodes-additional.php:67
+#: ../inc/redux/ReduxCore/inc/fields/border/field_border.php:146
+#: ../inc/redux/ReduxCore/inc/fields/spacing/field_spacing.php:170
+msgid "Left"
+msgstr ""
+
+#: ../inc/ab-shortcodes-additional.php:68
+#: ../inc/redux/ReduxCore/inc/fields/border/field_border.php:132
+#: ../inc/redux/ReduxCore/inc/fields/spacing/field_spacing.php:156
+msgid "Right"
+msgstr ""
+
+#: ../inc/ab-shortcodes-additional.php:74
+msgid "Autoplay"
+msgstr ""
+
+#: ../inc/ab-shortcodes-additional.php:77
+msgid "Pause on Hover"
+msgstr ""
+
+#: ../inc/ab-shortcodes-additional.php:80
+msgid "No"
+msgstr ""
+
+#: ../inc/ab-shortcodes-additional.php:81
+msgid "Resume"
+msgstr ""
+
+#: ../inc/ab-shortcodes-additional.php:82
+msgid "Immediate"
+msgstr ""
+
+#: ../inc/ab-shortcodes-additional.php:87
+msgid "Class"
+msgstr ""
+
+#: ../inc/ab-shortcodes-additional.php:90
+msgid "AB Testimonial Slider"
+msgstr ""
+
+#: ../inc/activate_plugins.php:69 ../inc/class-tgm-plugin-activation.php:164
+msgid "Install Required Plugins"
+msgstr ""
+
+#: ../inc/activate_plugins.php:70 ../inc/class-tgm-plugin-activation.php:165
+msgid "Install Plugins"
+msgstr ""
+
+#: ../inc/activate_plugins.php:71 ../inc/class-tgm-plugin-activation.php:166
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: ../inc/activate_plugins.php:72
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: ../inc/activate_plugins.php:83 ../inc/class-tgm-plugin-activation.php:180
+#: ../inc/class-tgm-plugin-activation.php:510
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: ../inc/activate_plugins.php:84 ../inc/class-tgm-plugin-activation.php:181
+#: ../inc/class-tgm-plugin-activation.php:1908
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: ../inc/activate_plugins.php:85
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: ../inc/admin/categories_additional_fields.php:12
+#: ../inc/admin/categories_additional_fields.php:63
+msgid "Blog Layout"
+msgstr ""
+
+#: ../inc/admin/categories_additional_fields.php:17
+#: ../inc/admin/categories_additional_fields.php:67
+msgid "Right Sidebar"
+msgstr ""
+
+#: ../inc/admin/categories_additional_fields.php:18
+#: ../inc/admin/categories_additional_fields.php:68
+msgid "Left Sidebar"
+msgstr ""
+
+#: ../inc/admin/categories_additional_fields.php:19
+#: ../inc/admin/categories_additional_fields.php:69
+msgid "No Sidebar"
+msgstr ""
+
+#: ../inc/admin/categories_additional_fields.php:20
+#: ../inc/admin/categories_additional_fields.php:70
+msgid "Timeline"
+msgstr ""
+
+#: ../inc/admin/categories_additional_fields.php:27
+#: ../inc/admin/categories_additional_fields.php:76
+msgid "Sidebar"
+msgstr ""
+
+#: ../inc/admin/categories_additional_fields.php:48
+#: ../inc/admin/categories_additional_fields.php:97
+msgid ""
+"Please select the sidebar you would like to display on this category. Note: "
+"If you like to use custom sidebar you must first create it under VozX "
+"Options > Sidebars."
+msgstr ""
+
+#: ../inc/admin/page_additional_fields.php:66
+msgid "Frontpage options"
+msgstr ""
+
+#: ../inc/admin/page_additional_fields.php:67
+msgid "Display categories"
+msgstr ""
+
+#: ../inc/admin/page_additional_fields.php:68
+msgid "Select Sidebar"
+msgstr ""
+
+#: ../inc/admin/page_additional_fields.php:85
+#: ../inc/admin/post_additional_fields.php:105
+#: ../inc/redux/ReduxCore/framework.php:1493
+msgid "Default"
+msgstr ""
+
+#: ../inc/admin/page_additional_fields.php:146
+msgid ""
+"Portfolio plugin must be installed and at least one portfolio category "
+"created"
+msgstr ""
+
+#: ../inc/admin/page_additional_fields.php:186
+msgid "Revolution Slider Options"
+msgstr ""
+
+#: ../inc/admin/page_additional_fields.php:193
+msgid "No sliders found, Please create a slider"
+msgstr ""
+
+#: ../inc/admin/page_additional_fields.php:199
+msgid "Choose Slider"
+msgstr ""
+
+#: ../inc/admin/page_additional_fields.php:206
+msgid "Slider Revolution plugin not installed"
+msgstr ""
+
+#: ../inc/admin/post_additional_fields.php:34
+msgid "Here you can set other media to be shown instead of featured image."
+msgstr ""
+
+#: ../inc/admin/post_additional_fields.php:39
+msgid "Youtube Video ID:"
+msgstr ""
+
+#: ../inc/admin/post_additional_fields.php:46
+msgid "Vimeo Video ID:"
+msgstr ""
+
+#: ../inc/admin/post_additional_fields.php:53
+msgid "SoundCloud ID:"
+msgstr ""
+
+#: ../inc/admin/post_additional_fields.php:60
+msgid "None - Use Featured Image"
+msgstr ""
+
+#: ../inc/breadcrumbs.php:5
+msgid "Home"
+msgstr ""
+
+#: ../inc/breadcrumbs.php:6
+msgid "Portfolio"
+msgstr ""
+
+#: ../inc/breadcrumbs.php:7
+msgid "Forum"
+msgstr ""
+
+#: ../inc/breadcrumbs.php:8
+#, php-format
+msgid "Archive for \"%s\""
+msgstr ""
+
+#: ../inc/breadcrumbs.php:9
+#, php-format
+msgid "Search Results for \"%s\""
+msgstr ""
+
+#: ../inc/breadcrumbs.php:10
+#, php-format
+msgid "Posts Tagged \"%s\""
+msgstr ""
+
+#: ../inc/breadcrumbs.php:11
+#, php-format
+msgid "Articles by %s"
+msgstr ""
+
+#: ../inc/breadcrumbs.php:12
+msgid "Error 404"
+msgstr ""
+
+#: ../inc/breadcrumbs.php:123
+msgid "Page"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:167
+msgid "Something went wrong."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:182
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:537
+#: ../inc/class-tgm-plugin-activation.php:2120
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:565
+#, php-format
+msgid "The following plugin was activated successfully: %s."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:738
+msgid "Dismiss this notice"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1125
+msgid "External Link"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1130
+msgid "Private Repository"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1133
+msgid "Pre-Packaged"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1137
+msgid "WordPress Repository"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1140
+msgid "Required"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1140
+msgid "Recommended"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1143
+msgid "Not Installed"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1145
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1147
+msgid "Not Updated"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1149
+#: ../inc/redux/ReduxCore/inc/fields/link_color/field_link_color.php:98
+msgid "Active"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1343
+#, php-format
+msgid ""
+"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+"Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1359
+msgid "Plugin"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1360
+msgid "Source"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1361
+msgid "Type"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1362
+#: ../inc/redux/ReduxCore/extensions/edd/edd_license/field_edd_license.php:125
+msgid "Status"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1380
+msgid "Install"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1381
+msgid "Activate"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1891
+msgid "Install package not available."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1892
+#, php-format
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1893
+msgid "Unpacking the package&#8230;"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1894
+msgid "Installing the plugin&#8230;"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1895
+msgid "Plugin install failed."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1896
+msgid "Plugin installed successfully."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1907
+msgid "Plugin activation failed."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2017
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2018
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2018
+#: ../inc/class-tgm-plugin-activation.php:2027
+msgid "Show Details"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2018
+#: ../inc/class-tgm-plugin-activation.php:2027
+msgid "Hide Details"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2019
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2020
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2024
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2025
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2026
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2027
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2028
+msgid "All installations have been completed."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2029
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../inc/redux.php:44 ../inc/redux.php:45
+msgid "VozX Options"
+msgstr ""
+
+#: ../inc/redux.php:96
+msgid "General"
+msgstr ""
+
+#: ../inc/redux.php:101
+msgid "Disable Responsiveness"
+msgstr ""
+
+#: ../inc/redux.php:107
+msgid "Favicon"
+msgstr ""
+
+#: ../inc/redux.php:113
+msgid "Hide Comments"
+msgstr ""
+
+#: ../inc/redux.php:114
+msgid "Check this to hide WordPress commenting system"
+msgstr ""
+
+#: ../inc/redux.php:119
+msgid "Hide Author Bio"
+msgstr ""
+
+#: ../inc/redux.php:120
+msgid "Check this to hide author biography under post content"
+msgstr ""
+
+#: ../inc/redux.php:125
+msgid "Use Preloader"
+msgstr ""
+
+#: ../inc/redux.php:130
+msgid "Custom CSS"
+msgstr ""
+
+#: ../inc/redux.php:131
+msgid "Here you can place additional CSS or CSS to override theme's styles"
+msgstr ""
+
+#: ../inc/redux.php:140
+msgid "Analytics Code"
+msgstr ""
+
+#: ../inc/redux.php:141
+msgid ""
+"Here you can paste Google Analytics (or similar, html valid) code to be "
+"printed out on every page just before closing body tag"
+msgstr ""
+
+#: ../inc/redux.php:153
+msgid "Header"
+msgstr ""
+
+#: ../inc/redux.php:158
+msgid "Header Logo"
+msgstr ""
+
+#: ../inc/redux.php:159
+msgid "Upload header logo"
+msgstr ""
+
+#: ../inc/redux.php:164
+msgid "Hide Title/Breadcrumbs Bar"
+msgstr ""
+
+#: ../inc/redux.php:169
+msgid "Hide Title From Bar"
+msgstr ""
+
+#: ../inc/redux.php:174
+msgid "Hide Breadcrumbs From Bar"
+msgstr ""
+
+#: ../inc/redux.php:184
+msgid "Title/Breadcrumbs Bar Background"
+msgstr ""
+
+#: ../inc/redux.php:192
+msgid "Sidebars"
+msgstr ""
+
+#: ../inc/redux.php:198
+msgid "Add as many custom sidebars as you need"
+msgstr ""
+
+#: ../inc/redux.php:208
+msgid "Colors"
+msgstr ""
+
+#: ../inc/redux.php:213
+msgid "Main Color"
+msgstr ""
+
+#: ../inc/redux.php:220
+msgid "Secondary Color"
+msgstr ""
+
+#: ../inc/redux.php:229
+msgid "Footer"
+msgstr ""
+
+#: ../inc/redux.php:234
+msgid "Copyright Notice"
+msgstr ""
+
+#: ../inc/redux.php:235
+msgid "Enter copyright notice to be shown in footer"
+msgstr ""
+
+#: ../inc/redux.php:240
+msgid "Linkedin Profile"
+msgstr ""
+
+#: ../inc/redux.php:245
+msgid "Facebook Profile"
+msgstr ""
+
+#: ../inc/redux.php:250
+msgid "Skype Profile"
+msgstr ""
+
+#: ../inc/redux.php:255
+msgid "Google+ Profile"
+msgstr ""
+
+#: ../inc/redux.php:260
+msgid "Twitter Profile"
+msgstr ""
+
+#: ../inc/redux.php:266
+msgid "Links Target"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/extensions/customizer/extension_customizer.php:338
+#: ../inc/redux/ReduxCore/framework.php:1240
+msgid "You have changes that are not saved. Would you like to save them now?"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/extensions/customizer/extension_customizer.php:339
+#: ../inc/redux/ReduxCore/framework.php:1241
+msgid "Are you sure? Resetting will lose all custom values."
+msgstr ""
+
+#: ../inc/redux/ReduxCore/extensions/customizer/extension_customizer.php:340
+#: ../inc/redux/ReduxCore/framework.php:1243
+msgid ""
+"Your current options will be replaced with the values of this preset. Would "
+"you like to proceed?"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/extensions/customizer/extension_customizer.php:369
+msgid "You have changes that are not saved.  Would you like to save them now?"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/extensions/customizer/extension_customizer.php:370
+msgid "Are you sure?  Resetting will lose all custom values."
+msgstr ""
+
+#: ../inc/redux/ReduxCore/extensions/customizer/extension_customizer.php:371
+msgid ""
+"Your current options will be replaced with the values of this preset.  Would "
+"you like to proceed?"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/extensions/edd/edd_license/EDD_License_Handler.php:112
+#, php-format
+msgid "%1$s License Key"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/extensions/edd/edd_license/EDD_License_Handler.php:218
+#: ../inc/redux/ReduxCore/extensions/edd/edd_license/field_edd_license.php:144
+msgid "Deactivate License"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/extensions/edd/edd_license/EDD_SL_Theme_Updater.php:54
+msgid ""
+"Updating this theme will lose any customizations you have made. 'Cancel' to "
+"stop, 'OK' to update."
+msgstr ""
+
+#: ../inc/redux/ReduxCore/extensions/edd/edd_license/field_edd_license.php:110
+#: ../inc/redux/ReduxCore/extensions/edd/edd_license/field_edd_license.php:118
+#: ../inc/redux/ReduxCore/extensions/edd/extension_edd.php:170
+msgid "Not Activated"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/extensions/edd/edd_license/field_edd_license.php:114
+#: ../inc/redux/ReduxCore/extensions/edd/extension_edd.php:173
+msgid "Deactivated"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/extensions/edd/edd_license/field_edd_license.php:116
+#: ../inc/redux/ReduxCore/extensions/edd/extension_edd.php:77
+#: ../inc/redux/ReduxCore/extensions/edd/extension_edd.php:119
+#: ../inc/redux/ReduxCore/extensions/edd/extension_edd.php:176
+msgid "Valid"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/extensions/edd/edd_license/field_edd_license.php:124
+msgid "Verifying license..."
+msgstr ""
+
+#: ../inc/redux/ReduxCore/extensions/edd/edd_license/field_edd_license.php:134
+msgid "Verify License"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/extensions/edd/edd_license/field_edd_license.php:139
+msgid "Activate License"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/extensions/edd/extension_edd.php:179
+msgid "Not Valid"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/framework.php:115
+#: ../inc/redux/ReduxCore/framework.php:121
+#: ../inc/redux/ReduxCore/framework.php:280
+#: ../inc/redux/ReduxCore/framework.php:283
+msgid "Options"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/framework.php:277
+#, php-format
+msgid "Options panel created using %1$s"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/framework.php:277
+msgid "Redux Framework"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/framework.php:929
+#: ../inc/redux/ReduxCore/framework.php:930
+#: ../inc/redux/ReduxCore/framework.php:1945
+msgid "Import / Export"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/framework.php:940
+#: ../inc/redux/ReduxCore/framework.php:941
+#: ../inc/redux/ReduxCore/framework.php:1961
+#: ../inc/redux/ReduxCore/framework.php:2059
+msgid "Options Object"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/framework.php:951
+#: ../inc/redux/ReduxCore/framework.php:952
+#: ../inc/redux/ReduxCore/framework.php:1975
+#: ../inc/redux/ReduxCore/framework.php:2079
+msgid "System Info"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/framework.php:1242
+msgid "Are you sure? Resetting will lose all custom values in this section."
+msgstr ""
+
+#: ../inc/redux/ReduxCore/framework.php:1805
+msgid "Warning- This options panel will not work properly without javascript!"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/framework.php:1859
+msgid "Expand"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/framework.php:1861
+#: ../inc/redux/ReduxCore/framework.php:2120
+msgid "Save Changes"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/framework.php:1863
+#: ../inc/redux/ReduxCore/framework.php:2122
+msgid "Reset Section"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/framework.php:1865
+#: ../inc/redux/ReduxCore/framework.php:2124
+msgid "Reset All"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/framework.php:1868
+#: ../inc/redux/ReduxCore/framework.php:2127
+msgid "Working..."
+msgstr ""
+
+#: ../inc/redux/ReduxCore/framework.php:1875
+msgid "Settings Imported!"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/framework.php:1877
+msgid "Settings Saved!"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/framework.php:1881
+msgid "Settings have changed, you should save them!"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/framework.php:1882
+msgid "error(s) were found!"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/framework.php:1883
+msgid "warning(s) were found!"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/framework.php:2012
+msgid "Import / Export Options"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/framework.php:2013
+msgid "Import Options"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/framework.php:2014
+msgid "Import from file"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/framework.php:2014
+msgid "Import from URL"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/framework.php:2019
+msgid ""
+"Input your backup file below and hit Import to restore your sites options "
+"from a backup."
+msgstr ""
+
+#: ../inc/redux/ReduxCore/framework.php:2029
+msgid ""
+"Input the URL to another sites options set and hit Import to load the "
+"options from that site."
+msgstr ""
+
+#: ../inc/redux/ReduxCore/framework.php:2036
+msgid "Import"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/framework.php:2036
+msgid ""
+"WARNING! This will overwrite all existing option values, please proceed with "
+"caution!"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/framework.php:2039
+msgid "Export Options"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/framework.php:2041
+msgid ""
+"Here you can copy/download your current option settings. Keep this safe as "
+"you can use it as a backup should anything go wrong, or you can use it to "
+"restore your settings on this site (or any other site)."
+msgstr ""
+
+#: ../inc/redux/ReduxCore/framework.php:2045
+msgid "Copy"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/framework.php:2045
+msgid "Download"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/framework.php:2045
+msgid "Copy Link"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/framework.php:2068
+msgid "Show Object in Javascript Console Object"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/background/field_background.php:119
+#: ../inc/redux/ReduxCore/inc/fields/color/field_color.php:72
+#: ../inc/redux/ReduxCore/inc/fields/color_gradient/field_color_gradient.php:81
+#: ../inc/redux/ReduxCore/inc/fields/color_gradient/field_color_gradient.php:91
+#: ../inc/redux/ReduxCore/inc/fields/color_rgba/field_color_rgba.php:84
+msgid "Transparent"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/background/field_background.php:136
+msgid "Background Repeat"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/background/field_background.php:152
+msgid "Background Clip"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/background/field_background.php:168
+msgid "Background Origin"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/background/field_background.php:183
+msgid "Background Size"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/background/field_background.php:198
+msgid "Background Attachment"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/background/field_background.php:218
+msgid "Background Position"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/background/field_background.php:273
+#: ../inc/redux/ReduxCore/inc/fields/media/field_media.php:116
+msgid "No media selected"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/background/field_background.php:307
+#: ../inc/redux/ReduxCore/inc/fields/media/field_media.php:150
+#: ../inc/redux/ReduxCore/inc/fields/slides/field_slides.php:117
+#: ../inc/redux/ReduxCore/inc/fields/slides/field_slides.php:180
+msgid "Upload"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/background/field_background.php:313
+#: ../inc/redux/ReduxCore/inc/fields/media/field_media.php:156
+#: ../inc/redux/ReduxCore/inc/fields/multi_text/field_multi_text.php:75
+#: ../inc/redux/ReduxCore/inc/fields/multi_text/field_multi_text.php:78
+#: ../inc/redux/ReduxCore/inc/fields/multi_text/field_multi_text.php:81
+#: ../inc/redux/ReduxCore/inc/fields/slides/field_slides.php:123
+#: ../inc/redux/ReduxCore/inc/fields/slides/field_slides.php:182
+msgid "Remove"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/border/field_border.php:112
+#: ../inc/redux/ReduxCore/inc/fields/spacing/field_spacing.php:125
+msgid "All"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/border/field_border.php:125
+#: ../inc/redux/ReduxCore/inc/fields/spacing/field_spacing.php:149
+msgid "Top"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/border/field_border.php:139
+#: ../inc/redux/ReduxCore/inc/fields/spacing/field_spacing.php:163
+msgid "Bottom"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/border/field_border.php:162
+msgid "Border style"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/color_gradient/field_color_gradient.php:73
+msgid "From "
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/color_gradient/field_color_gradient.php:84
+msgid "To "
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/dimensions/field_dimensions.php:139
+msgid "Width"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/dimensions/field_dimensions.php:155
+msgid "height"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/dimensions/field_dimensions.php:168
+#: ../inc/redux/ReduxCore/inc/fields/dimensions/field_dimensions.php:169
+#: ../inc/redux/ReduxCore/inc/fields/spacing/field_spacing.php:181
+#: ../inc/redux/ReduxCore/inc/fields/spacing/field_spacing.php:182
+msgid "Units"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/gallery/field_gallery.php:77
+msgid "Add/Edit Gallery"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/gallery/field_gallery.php:78
+msgid "Clear Gallery"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/group/field_group.php:71
+msgid "New"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/group/field_group.php:84
+msgid "New "
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/group/field_group.php:133
+#: ../inc/redux/ReduxCore/inc/fields/group/field_group.php:198
+msgid "Delete"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/group/field_group.php:203
+msgid "Add"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/link_color/field_link_color.php:86
+msgid "Regular"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/link_color/field_link_color.php:90
+msgid "Hover"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/link_color/field_link_color.php:94
+msgid "Visited"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/multi_text/field_multi_text.php:65
+msgid "Add More"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/password/field_password.php:55
+msgid "Password"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/password/field_password.php:56
+msgid "Username"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/select/field_select.php:69
+#: ../inc/redux/ReduxCore/inc/fields/select_image/field_select_image.php:59
+msgid "Select an item"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/select/field_select.php:110
+#: ../inc/redux/ReduxCore/inc/fields/select_image/field_select_image.php:134
+msgid "No items of this type were found."
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/slides/field_slides.php:128
+#: ../inc/redux/ReduxCore/inc/fields/slides/field_slides.php:187
+msgid "Title"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/slides/field_slides.php:129
+#: ../inc/redux/ReduxCore/inc/fields/slides/field_slides.php:189
+#: ../single-portfolio.php:29
+msgid "Description"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/slides/field_slides.php:130
+#: ../inc/redux/ReduxCore/inc/fields/slides/field_slides.php:191
+msgid "URL"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/slides/field_slides.php:138
+#: ../inc/redux/ReduxCore/inc/fields/slides/field_slides.php:200
+msgid "Select an Option"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/slides/field_slides.php:158
+#: ../inc/redux/ReduxCore/inc/fields/slides/field_slides.php:220
+msgid "Delete Slide"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/slides/field_slides.php:223
+msgid "Add Slide"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/typography/field_typography.php:109
+msgid "Font family"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/typography/field_typography.php:150
+msgid "Standard Fonts"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/typography/field_typography.php:186
+#: ../inc/redux/ReduxCore/inc/fields/typography/field_typography.php:190
+msgid "Font style"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/typography/field_typography.php:216
+msgid "Font subsets"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/typography/field_typography.php:217
+msgid "Subsets"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/typography/field_typography.php:217
+msgid "Font script"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/typography/field_typography.php:235
+msgid "Size"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/typography/field_typography.php:244
+msgid "Height"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/typography/field_typography.php:252
+msgid "Word Spacing"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/typography/field_typography.php:260
+msgid "Letter Spacing"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/typography/field_typography.php:274
+msgid "Backup Font Family"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/typography/field_typography.php:294
+msgid "Font color"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/fields/typography/field_typography.php:569
+msgid "Google Webfonts"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/tracking.php:59
+msgid "Help improve Our Panel"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/tracking.php:60
+msgid ""
+"Please helps us improve our panel by allowing us to gather anonymous usage "
+"stats so we know which configurations, plugins and themes to test with."
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/tracking.php:65
+msgid "Allow tracking"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/tracking.php:70
+msgid "Do not allow tracking"
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/validation/color/validation_color.php:15
+#: ../inc/redux/ReduxCore/inc/validation/color_rgba/validation_color_rgba.php:15
+#: ../inc/redux/ReduxCore/inc/validation/colorrgba/validation_colorrgba.php:15
+msgid "This field must be a valid color value."
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/validation/comma_numeric/validation_comma_numeric.php:15
+msgid ""
+"You must provide a comma separated list of numerical values for this option."
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/validation/date/validation_date.php:15
+msgid "This field must be a valid date."
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/validation/email/validation_email.php:15
+msgid "You must provide a valid email for this option."
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/validation/no_html/validation_no_html.php:15
+msgid ""
+"You must not enter any HTML in this field, all HTML tags have been removed."
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/validation/no_special_chars/validation_no_special_chars.php:15
+msgid ""
+"You must not enter any special characters in this field, all special "
+"characters have been removed."
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/validation/numeric/validation_numeric.php:15
+msgid "You must provide a numerical value for this option."
+msgstr ""
+
+#: ../inc/redux/ReduxCore/inc/validation/url/validation_url.php:15
+msgid "You must provide a valid URL for this option."
+msgstr ""
+
+#: ../inc/redux/class.redux-plugin.php:277
+msgid "Redux Framework has an embedded demo."
+msgstr ""
+
+#: ../inc/redux/class.redux-plugin.php:277
+msgid "Click here to activate the sample config file."
+msgstr ""
+
+#: ../inc/redux/class.redux-plugin.php:381
+msgid "Github Repo"
+msgstr ""
+
+#: ../inc/redux/class.redux-plugin.php:382
+msgid "Issue Tracker"
+msgstr ""
+
+#: ../inc/redux/class.redux-plugin.php:387
+msgid "Deactivate Demo Mode"
+msgstr ""
+
+#: ../inc/redux/class.redux-plugin.php:389
+msgid "Activate Demo Mode"
+msgstr ""
+
+#: ../inc/sidebars.php:5 ../index.php:149 ../sidebar.php:3 ../single.php:91
+msgid "Primary Sidebar"
+msgstr ""
+
+#: ../inc/sidebars.php:7
+msgid "The Primary Widget Area"
+msgstr ""
+
+#: ../inc/sidebars.php:16 ../inc/sidebars.php:18 ../search.php:33
+msgid "Search Results Sidebar"
+msgstr ""
+
+#: ../inc/sidebars.php:29
+msgid "First Footer Widget Area"
+msgstr ""
+
+#: ../inc/sidebars.php:39
+msgid "Second Footer Widget Area"
+msgstr ""
+
+#: ../inc/sidebars.php:49
+msgid "Third Footer Widget Area"
+msgstr ""
+
+#: ../inc/sidebars.php:59
+msgid "Fourth Footer Widget Area"
+msgstr ""
+
+#: ../inc/widgets/contact-info.php:7
+msgid "Contact informations with icons"
+msgstr ""
+
+#: ../inc/widgets/contact-info.php:12
+msgid "Contact Info"
+msgstr ""
+
+#: ../inc/widgets/contact-info.php:88 ../inc/widgets/flickr.php:69
+msgid "Title:"
+msgstr ""
+
+#: ../inc/widgets/contact-info.php:92
+msgid "Telephone:"
+msgstr ""
+
+#: ../inc/widgets/contact-info.php:96
+msgid "Fax:"
+msgstr ""
+
+#: ../inc/widgets/contact-info.php:100
+msgid "E-mail:"
+msgstr ""
+
+#: ../inc/widgets/contact-info.php:104
+msgid "Company name:"
+msgstr ""
+
+#: ../inc/widgets/contact-info.php:108
+msgid "Address:"
+msgstr ""
+
+#: ../inc/widgets/contact-info.php:112
+msgid "State:"
+msgstr ""
+
+#: ../inc/widgets/contact-info.php:116
+msgid "Map link:"
+msgstr ""
+
+#: ../inc/widgets/contact-info.php:120
+msgid "Map text:"
+msgstr ""
+
+#: ../inc/widgets/flickr.php:7
+msgid "Photostream from Flickr."
+msgstr ""
+
+#: ../inc/widgets/flickr.php:12
+msgid "Flickr stream"
+msgstr ""
+
+#: ../inc/widgets/flickr.php:50
+msgid "Invalid flickr username or connection error."
+msgstr ""
+
+#: ../inc/widgets/flickr.php:66
+msgid "Photos from Flickr"
+msgstr ""
+
+#: ../inc/widgets/flickr.php:73
+msgid "Flickr username:"
+msgstr ""
+
+#: ../inc/widgets/flickr.php:77
+msgid "No. of images:"
+msgstr ""
+
+#: ../index.php:13
+msgid "Blog"
+msgstr ""
+
+#: ../index.php:21
+msgid "Posts by"
+msgstr ""
+
+#: ../index.php:24
+msgid "Posts Taged"
+msgstr ""
+
+#: ../index.php:28
+msgid "Posts on "
+msgstr ""
+
+#: ../index.php:89 ../index.php:136 ../single.php:73
+msgid "No posts were found. Sorry!"
+msgstr ""
+
+#: ../index.php:92
+msgid "No older posts found"
+msgstr ""
+
+#: ../page-front-page-revolution.php:22
+msgid "You did not select any slider in <i>Front Page Options</i> metabox."
+msgstr ""
+
+#: ../page-portfolio-3columns.php:7 ../page-portfolio-4columns.php:7
+#: ../page-portfolio.php:7
+msgid "Read More"
+msgstr ""
+
+#: ../page-portfolio-3columns.php:21 ../page-portfolio-3columns.php:46
+#: ../page-portfolio-4columns.php:21 ../page-portfolio-4columns.php:46
+#: ../page-portfolio.php:21 ../single-portfolio.php:15
+msgid "This page requires Portfolio plugin to be activated"
+msgstr ""
+
+#: ../page-portfolio-3columns.php:92 ../page-portfolio-4columns.php:92
+#: ../page-portfolio.php:124
+msgid "No Portfolio Posts Found."
+msgstr ""
+
+#: ../page-portfolio.php:72 ../single-portfolio.php:31
+msgid "Details"
+msgstr ""
+
+#: ../page-portfolio.php:75 ../single-portfolio.php:34
+msgid "Date:"
+msgstr ""
+
+#: ../page-portfolio.php:81 ../single-portfolio.php:40
+msgid "Client:"
+msgstr ""
+
+#: ../page-portfolio.php:87 ../single-portfolio.php:46
+msgid "Category:"
+msgstr ""
+
+#: ../page-portfolio.php:106 ../single-portfolio.php:64
+msgid "Skills used:"
+msgstr ""
+
+#: ../partials/comments.php:19
+msgid "Pingback:"
+msgstr ""
+
+#: ../partials/comments.php:19 ../partials/comments.php:48
+msgid "Edit"
+msgstr ""
+
+#: ../partials/comments.php:34
+#, php-format
+msgid "%1$s  %2$s"
+msgstr ""
+
+#: ../partials/comments.php:40
+#, php-format
+msgid "%1$s %2$s"
+msgstr ""
+
+#: ../partials/comments.php:45
+msgid "Reply"
+msgstr ""
+
+#: ../partials/comments.php:51
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../partials/comments.php:67
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: ../partials/comments.php:85 ../partials/comments.php:106
+msgid "Comment navigation"
+msgstr ""
+
+#: ../partials/comments.php:86 ../partials/comments.php:107
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: ../partials/comments.php:87 ../partials/comments.php:108
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: ../partials/comments.php:118
+msgid "Comments are closed."
+msgstr ""
+
+#: ../partials/comments.php:124
+msgid "Leave a comment"
+msgstr ""
+
+#: ../partials/pagination-portfolio.php:15
+#: ../partials/pagination-search.php:16
+msgid "&laquo; Previous"
+msgstr ""
+
+#: ../partials/pagination-portfolio.php:16
+#: ../partials/pagination-search.php:17
+msgid "Next &raquo;"
+msgstr ""
+
+#: ../partials/pagination.php:18
+msgid "Previous"
+msgstr ""
+
+#: ../partials/pagination.php:19
+msgid "Next"
+msgstr ""
+
+#: ../search.php:7
+msgid "Search results"
+msgstr ""
+
+#: ../search.php:13
+msgid "Showing Results for: "
+msgstr ""
+
+#: ../search.php:29
+msgid "Sorry, your search query yielded no results."
+msgstr ""
+
+#: ../searchform.php:3 ../sidebar.php:7
+msgid "Search"
+msgstr ""
+
+#: ../single-portfolio.php:70
+msgid "Visit site"
+msgstr ""
+
+#: ../single-portfolio.php:75 ../single.php:49
+msgid "Check this "
+msgstr ""
+
+#: ../single-portfolio.php:91
+msgid "Similar Projects"
+msgstr ""
+
+#: ../single.php:47
+msgid "Share"
+msgstr ""
