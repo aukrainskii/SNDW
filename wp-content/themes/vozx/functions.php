@@ -125,6 +125,7 @@ if ( ! function_exists( 'ABdev_vozx_scripts' ) ){
 		wp_enqueue_script( 'isotope', TEMPPATH.'/js/jquery.isotope.min.js', array( 'jquery' ),'', true );
 		wp_enqueue_script( 'fancybox', TEMPPATH.'/js/jquery.fancybox-1.3.4.js', array( 'jquery' ),'', true );
 		wp_enqueue_script( 'knob', TEMPPATH.'/js/jquery.knob.js', array( 'jquery' ),'', true );
+	
 		if (is_singular( 'portfolio' )) {
 			wp_enqueue_script( 'nivo_slider', TEMPPATH.'/js/jquery.nivo.slider.js', array( 'jquery' ), THEME_VERSION, true );
 			wp_enqueue_script( 'nivo_depend', TEMPPATH.'/js/nivo.dependency.js', array( 'nivo_slider' ), '', true );

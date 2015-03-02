@@ -1,0 +1,279 @@
+/*
+Theme Name: Vozx Child Theme
+Template: vozx
+*/
+
+@import url("../vozx/style.css");
+
+/* home page styles START */
+
+.home .screenreader {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+/*.container {
+  max-width: 980px;
+  padding: 0px 30px;
+  margin: 0 auto;
+}*/
+.home .container:before,
+.home .container:after {
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.home .container:after {
+    clear: both;
+}
+.home .container {
+    zoom: 1; /* IE < 8 */
+}
+
+
+/* Nav & Midnight */
+.home nav.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 9999;
+  height: 300px;
+  pointer-events: none;
+}
+
+.home .logo-holder {
+  margin: 60px auto 0px auto;
+  height: 150px;
+  padding-top: 295px;
+}
+
+.home .logo {
+  display: block;
+  width: 800px;
+  height: 150px;
+  padding: 0;
+  margin: 0px auto;
+  margin-top: -150px;
+  background: url(images/logos.png) no-repeat -0px -150px;
+  background-size: 800px 1050px;
+}
+
+.midnightHeader.default .logo,
+.midnightHeader.section-0 .logo,
+.midnightHeader.section-6 .logo {
+  background-position: -0px 0%;
+}
+.midnightHeader.section-1 .logo {
+  background-position: -0px 16.67%;
+}
+.midnightHeader.section-2 .logo {
+  background-position: -0px 33.33%;
+}
+.midnightHeader.section-3 .logo {
+  background-position: -0px 50.00%;
+}
+.midnightHeader.section-4 .logo {
+  background-position: -0px 66.67%;
+}
+.midnightHeader.section-5 .logo {
+  background-position: -0px 83.33%;
+}
+.midnightHeader.full .logo {
+  background-position: -0px 100%;
+}
+
+
+.home section{
+  padding: 1px 0;
+  overflow: hidden;
+  background-size: cover !important;
+}
+
+.home .scroll-prompt {
+  width: 40px;
+  height: 40px;
+  background: url(images/scroll.png) no-repeat 50% 50%;
+  margin: 50px auto 0;
+}
+
+
+.home section.hp-section {
+  position: relative;
+}
+
+.home .full-height{
+  min-height: 100vh;
+}
+
+
+@media(max-width: 1680px) {
+
+  .home nav.fixed {
+    height: 250px;
+  }
+    .home .logo-holder {
+      padding-top: 247px;
+    }
+    
+  .home .logo-holder {
+    height: 112.25px;
+  }
+  .home .logo {
+    width: 600px;
+    height: 112.25px;
+    margin-top: -112.25px;
+    background-size: 600px 788px;
+  }
+}
+
+
+@media(max-width: 1280px) {
+  .home header {
+    min-height: 0px;
+  }
+  .home nav.fixed {
+    height: 200px;
+  }
+    .home .logo-holder {
+      height: 100px;
+      padding-top: 197px;
+    }
+    .home .logo {
+      height: 100px;
+      margin-top: -100px;
+    }
+}
+
+@media(max-width: 860px) {
+
+}
+
+
+@media(max-width: 700px) {
+  .home .logo-holder {
+    height: 75px;
+  }
+  .home .logo {
+    width: 400px;
+    height: 75px;
+    margin-top: -75px;
+    background-size: 400px 525px;
+  }
+
+
+
+  .home h1 {
+    font-size: 24px;
+  }
+  .home header p {
+    font-size: 20px;
+  }
+}
+
+
+@media(max-width: 480px) {
+  .home nav.fixed {
+    height: 120px;
+  }
+    .home .logo-holder {
+      padding-top: 118px;
+    }
+
+  .home .logo-holder {
+    height: 52.5px;
+  }
+  .home .logo {
+    width: 280px;
+    height: 52.5px;
+    margin-top: -52.5px;
+    background-image: url(images/logos-mobile.png);
+    background-size: 280px 368px;
+  }
+
+}
+
+@media(max-width: 320px) {
+
+  .home .logo-holder {
+    height: 45px;
+  }
+  .home .logo {
+    width: 240px;
+    height: 45px;
+    margin-top: -45px;
+    background-size: 240px 315px;
+  }
+
+}
+
+/* home page styles END */
+
+.home  #footer_copyright, .home  #back_to_top {
+	display: none;
+}
+
+.home .hp-section.text-center .container {
+	max-width: 65%;
+  margin: 20vh auto 0;
+  text-align: center;
+}
+
+
+
+.home .hp-section.text-left .container {
+  max-width: 640px;
+  margin-left: 0;
+  text-align: left;
+}
+
+.home .hp-section.text-right .container {
+  max-width: 640px;
+  margin-right: 0;
+  text-align: left;
+}
+
+.home .hp-section {
+  display: table;
+  width: 100%;
+  padding: 100px;
+}
+
+.home .hp-section .hp-container {
+	display: table-cell;
+	vertical-align: bottom;
+}
+
+.home .hp-section .hp-container p {
+	font-size: 21px;
+	line-height: 30px;
+  margin-bottom: 0;
+}
+
+.home .hp-section.text-center .hp-container {
+  vertical-align: top;
+}
+
+.home .hp-section.text-center .dnd-button {
+  margin-top: 70px;
+}
+
+
+.home h2 {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.home h1, .home h2, .home h3, .home h4, .home h5, .home h6{
+	font-family: 'Open Sans';
+	font-weight: 100;
+	text-transform: uppercase;
+}
+
+body.home {
+	font-family: 'Open Sans';
+	font-weight: 100;
+}
